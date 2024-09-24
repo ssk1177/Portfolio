@@ -1,28 +1,48 @@
 .footer {
     text-align: center;
-    padding: 20px;
-    background-color: white;
-    height:10vh;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #e0e0e0;
+    color: #333;
+    height: auto; /* Auto height to adjust based on content */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px; /* Adds space between Call and Write */
+    align-items: center;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 0;
 }
 
 .footer-social-links {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .footer-social-links a {
-    text-decoration: none;
     font-size: 24px;
-    color: black;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
-.contact-info {
-    display:flex;
-    justify-content:flex-end;
-    padding-right:50px;
+.footer-social-links a:hover {
+    color: #007bff;
 }
 
-.space {
-    width:50px;
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
 }

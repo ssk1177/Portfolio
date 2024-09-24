@@ -7,14 +7,12 @@ import githubIcon from "./../assets/images/github.png";
 import colabIcon from "./../assets/images/collab.jpg";
 import kaggleIcon from "./../assets/images/kaggle.png";
 import titanic from "./../assets/images/titanic.png";
-import digits from "./../assets/images/digits.png"
+import digits from "./../assets/images/digits.png";
 import etl from "./../assets/images/etl.png";
-
 
 const Projects = () => {
   const [filter, setFilter] = useState("All");
 
-  // Project data
   const projects = [
     {
       name: "JobWizard",
@@ -91,15 +89,11 @@ const Projects = () => {
     },
   ];
 
-  // Filtered projects based on the current filter
   const filteredProjects = projects.filter((project) =>
     filter === "All" ? true : project.category === filter
   );
 
-  // Function to get button class based on selection
-  const getButtonClass = (option) => {
-    return filter === option ? "active" : "";
-  };
+  const getButtonClass = (option) => (filter === option ? "active" : "");
 
   return (
     <div className="projects-container">

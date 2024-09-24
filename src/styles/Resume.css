@@ -5,131 +5,142 @@ body {
 }
 
 .resume-container {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   padding: 20px;
   background-color: #e8ddd1; /* Background similar to the beige tone */
 }
 
 .resume-outer {
-    max-width: 1200px;
+  max-width: 1200px;
+  background: white; /* White background for the resume */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Padding for better spacing */
 }
 
 /* Resume Title Section */
 .resume-title {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Space between title and button */
   align-items: center;
   padding: 20px 0;
-}
-
-.download-cv {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 20px 0;
-  float: right;
-  width:fit-content;
 }
 
 .resume-header {
-  font-size: 35px;
+  text-align: center; /* Centering the resume header */
+  font-size: 36px;
   font-weight: bold;
+  color: #333; /* Darker color for better readability */
 }
 
 .bullet-point {
   color: #0056b3; /* Blue bullet point */
 }
 
-.download-cv {
+/* Download CV Button */
+.download-cv-button {
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.download-cv:hover {
+.download-cv-button:hover {
   background-color: #0056b3;
+  transform: scale(1.05); /* Slight scaling effect on hover */
 }
 
-/* Experience Section */
-.experience-section {
-  padding: 20px 0;
-}
-
-.sub-header {
-  text-align:left;
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-
-.job-card {
-    display:flex;
-  background-color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  justify-content:space-around;
-  align-items:center;
-}
-/*
-.company-jd {
-    text-align:justify;
-    width:60%;
-}*/
-
-.job-duration {
-  color: #0056b3; /* Blue text */
-  font-weight: bold;
-}
-
-.job-position {
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.job-company {
-  font-size: 18px;
-  color: blue;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.job-location {
-  font-size: 18px;
-  
-  margin-bottom: 10px;
-}
-
-.job-description {
-  font-size: 16px;
-  line-height: 1.5em;
-}
-
-/* Education Section */
+/* Experience and Education Sections */
+.experience-section,
 .education-section {
   padding: 20px 0;
 }
 
-.education-header {
-  font-size: 25px;
+.sub-header {
+  font-size: 28px;
+  margin-bottom: 10px; /* Reduced margin for compactness */
+  border-bottom: 2px solid #0056b3; /* Bottom border for emphasis */
+  padding-bottom: 5px;
+}
+
+/* Tile Styles */
+.tile-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap tiles to the next line */
+  gap: 20px; /* Space between tiles */
+}
+
+.tile {
+  flex: 1 1 calc(45% - 20px); /* Responsive width, two tiles per row with some margin */
+  background-color: #f9f9f9; /* Light background for tiles */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tile:hover {
+  transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+.tile-wes {
+  color: blueviolet;
+}
+
+.tile-header {
+  margin-bottom: 10px; /* Space between header and description */
+  text-align: center;
+}
+
+.tile-duration {
+  color: #0056b3; /* Blue text */
+  font-weight: bold;
+  font-size: 18px; /* Increased size for better visibility */
+}
+
+.tile-position,
+.tile-company,
+.tile-location {
+  font-weight: bold;
+  color: #333; /* Darker text for readability */
+  margin: 2px 0; /* Margin for spacing */
+}
+
+/* Tile Description */
+.tile-description {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #555; /* Slightly gray text for descriptions */
+  
+}
+
+/* Project Description Formatting */
+.project-description {
+  margin: 10px 0; /* Space between project descriptions */
+  text-align: center;
+}
+
+.description-text {
+  margin: 5px 0; /* Space for description text */
+  text-align:justify;
+}
+
+/* Highlighting WES Equivalency */
+.project-title {
+  color: #0056b3; /* Highlighted color for project titles */
   font-weight: bold;
 }
 
-
-.company-details {
-  flex: 1;
-  padding-right: 20px;
-  border-right: 2px solid rgba(0, 0, 0, 0.1); /* Subtle color and thicker line */
-  border-image: linear-gradient(to bottom, #ff7e5f, #feb47b) 1; /* Gradient effect */
+.wes-highlight {
+  font-weight: bold;
+  color: #ff5722; /* Orange color for WES equivalency */
 }
 
-.company-jd {
-  flex: 2;
-  padding-left: 20px;
-  text-align:justify;
+/* Point Item Formatting */
+.point-item {
+  margin: 5px 0; /* Space between points */
+  text-align:left;
 }

@@ -1,46 +1,83 @@
 .header {
     display: flex;
     justify-content: space-between;
-    height:100px;
+    height: 100px;
     background-color: white;
 }
 
 .logo {
-    display:flex;
-    padding-left:50px;
-    align-items:center;
-
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
 }
 
 .bullet {
-    width:15px;
-    height:15px;
-    background-color:blue;
+    width: 15px;
+    height: 15px;
+    background-color: blue;
 }
 
 .navigation {
-    display:flex;
-    justify-content:flex-end;
+    display: flex;
+    justify-content: flex-end;
     width: 50%;
-    align-items:center;
-    padding-right:50px;
+    align-items: center;
+    padding-right: 50px;
 }
 
 .logo .name {
     font-weight: bold;
-    font-size:25px;
-    font-family:fangsong;
-    padding-left:10px;
+    font-size: 25px;
+    font-family: fangsong;
+    padding-left: 10px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-    font-family:fangsong;
+    font-family: fangsong;
+    position: relative; /* Add position relative for positioning pseudo-elements */
+}
+
+.nav-links li {
+    position: relative; /* For positioning the ::before and ::after elements */
 }
 
 .nav-links li a {
     text-decoration: none;
     color: black;
+    padding: 10px 0; /* Add padding for better spacing */
+}
+
+.nav-links li::before,
+.nav-links li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Height of the line */
+    background-color: #000; /* Color of the line */
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+.nav-links li::before {
+    top: 0; /* Position above the text */
+    left: 50%; /* Center align */
+    transform: translateX(-50%); /* Center it */
+}
+
+.nav-links li::after {
+    bottom: 0; /* Position below the text */
+    left: 50%; /* Center align */
+    transform: translateX(-50%); /* Center it */
+}
+
+.nav-links li:hover::before,
+.nav-links li:hover::after {
+    width: 100%; /* Expand to full width on hover */
+}
+
+/* Optional: Add some styling for better appearance */
+.nav-links li:hover a {
+    color: blue; /* Change text color on hover */
 }

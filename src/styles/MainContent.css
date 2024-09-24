@@ -1,45 +1,47 @@
 .main-content {
     display: flex;
     padding: 50px;
-    height:60vh;
-    
-    justify-content:center;
-    /*background-color:;
-    background-color: white;*/
-    background: linear-gradient(to right, rgb(230,218,206) 30%, white 30%);
+    height: 60vh;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(230, 218, 206) 30%, white 30%);
 }
 
 .center-section {
     width: 70%;
-    display:flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start */
 }
 
 .profile-card {
     width: 30%;
-    background-color: rgba(244,236,230,1);
+    background-color: rgba(244, 236, 230, 1);
     text-align: center;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding for inner content */
 }
 
 .profile-image {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    padding-top:20px;
+    margin-top: 10px; /* Margin for spacing */
 }
 
 .social-icon {
     width: 70px;
     height: 25px;
-}
-
-.role {
-    color: gray;
-    margin-bottom: 20px;
+    margin: 0 10px; /* Spacing between icons */
+    transition: transform 0.3s; /* Smooth scale effect */
 }
 
 .social-links {
-    padding:10px;
-    background-color:white;
+    display: flex;
+    justify-content: center; /* Center icons */
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px; /* Rounded corners */
 }
 
 .social-links a {
@@ -47,49 +49,68 @@
     font-size: 24px;
 }
 
+.social-links a:hover .social-icon {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
 .bio-section {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    padding-left: 10px;
-    justify-content:space-between;
+    padding-left: 20px; /* Increased padding */
+    justify-content: space-between;
 }
 
 .bio-section h1 {
     font-size: 48px;
     margin: 0;
+    color: #333; /* Darker color for better contrast */
 }
 
 .bio-section p {
     margin-top: 10px;
+    line-height: 1.6; /* Improved readability */
+    color: #555; /* Softer color for body text */
 }
 
 .buttons {
     margin-top: 20px;
 }
 
-.resume-btn, .projects-btn {
+.resume-btn,
+.projects-btn {
     padding: 10px 20px;
     border: none;
     margin-right: 10px;
     cursor: pointer;
-    border-radius:20px;
-    width:200px;
-    height:40px;
-    font-size:17px;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for buttons */
 }
 
 .resume-btn {
-    background-color: blue;
+    background-color: #007bff; /* Blue color */
     color: white;
 }
 
 .projects-btn {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: 1px solid #007bff; /* Consistent border color */
+}
+
+.resume-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.projects-btn:hover {
+    background-color: #e9ecef; /* Light gray on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
 }
 
 .bio-text {
-    text-align:left;
+    text-align: left;
 }

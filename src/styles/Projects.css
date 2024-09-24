@@ -1,20 +1,12 @@
 /* Container for the entire section */
 .projects-container {
-  background-color: #e8ddd1;
-  font-family: Arial, sans-serif;
-  text-align: -webkit-center;
-}
-
-.vertical-bar {
-  width: 5px;
-  height: 30px;
-  margin-top:10%;
-  background-color: #0A58ED; /* Blue color */
-  margin-right: 20px; /* Spacing between the bar and content */
-}
-
-.project-details {
-    display:flex;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements horizontally */
 }
 
 /* Header section */
@@ -28,16 +20,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   color: #000;
-  padding-top:30px;
-}
-
-.social-icon {
-    width: 70px;
-    height: 25px;
-}
-
-.bullet-point {
-  color: #0056b3; /* Blue bullet point */
+  padding-top: 30px;
 }
 
 .projects-description {
@@ -45,27 +28,53 @@
   color: #6b6b6b;
   max-width: 700px;
   margin: 0 auto;
-  text-align:justify;
+  text-align: justify;
+  line-height: 1.6;
 }
 
-/* Project section */
+/* Project Section */
 .project {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
-  width:50%;
+  width: 60%; /* Adjust the width as needed */
   flex-direction: column;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out forwards;
+  border-radius: 10px;
+  /* Center the project boxes */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
 }
 
 .project-section {
   display: flex;
+  padding: 20px;
+  gap: 20px;
 }
 
 /* Left side project info */
 .project-info {
-  flex: 1;  
+  flex: 1;
 }
 
 .project-name {
@@ -84,7 +93,7 @@
 .project-description {
   font-size: 16px;
   color: #6b6b6b;
-  text-align:justify;
+  text-align: justify;
   padding: 20px;
   line-height: 1.5em;
 }
@@ -98,88 +107,82 @@
 .project-image img {
   width: 100%;
   height: auto;
-  object-fit: fill;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.project-content {
-    text-align:left;
-}
-
+/* Filter buttons */
 .filter-buttons {
   margin: 20px 0;
-  display: flex; /* Align buttons horizontally */
-  justify-content: center; /* Center the buttons */
+  display: flex;
+  justify-content: center;
 }
 
 .filter-buttons button {
   margin: 0 10px;
-  padding: 12px 24px; /* Increase padding for a better feel */
+  padding: 12px 24px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
-  font-size: 16px; /* Increase font size */
-  font-weight: 600; /* Make font slightly bolder */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-  transition: all 0.3s ease; /* Smooth transition for all properties */
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .filter-buttons button.active {
-  background: #ff6f61; /* A solid, distinct color for the active button */
-  color: #fff; /* Ensure text is white */
-  font-weight: 700; /* Make the active button bold */
-  border: 2px solid #fff; /* Add a white border to differentiate */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly increase shadow */
-  transform: translateY(-2px); /* Lift the active button slightly */
+  background: #ff6f61;
+  font-weight: 700;
+  transform: translateY(-2px);
 }
 
 .filter-buttons button:hover {
-  background: linear-gradient(135deg, #4e0f87, #1a4cbb); /* Darker gradient on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-  transform: translateY(-2px); /* Lift the button on hover */
+  background: linear-gradient(135deg, #4e0f87, #1a4cbb);
+  transform: translateY(-2px);
 }
 
-.filter-buttons button:focus {
-  outline: none; /* Remove the default outline */
+.vertical-bar {
+  width: 5px;
+  height: 30px;
+  margin-top: 10%;
+  background-color: #0A58ED;
+  margin-right: 20px;
 }
+
+.project-details {
+  display: flex;
+}
+
 .social-icons {
   display: flex;
   justify-content: flex-start;
-  align-items:center;
-  padding-left:20px;
+  align-items: center;
+  padding-left: 20px;
 }
 
-.icon {
+.social-icon {
+  width: 70px;
+  height: 25px;
   margin-left: 10px;
-  font-size: 1.5rem; /* Adjust size as needed */
-  color: #0077b5; /* LinkedIn color */
-  transition: color 0.3s;
 }
 
-.icon:hover {
-  color: #005582; /* Darker shade on hover */
-}
-
-/* Tech Stack */
 .tech-stack {
-  background-color: greenyellow;
-}
-
-.icon-text {
-  text-wrap:nowrap;
-  color: darkblue;
+  background-color: #f3f4f6;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .project {
     flex-direction: column;
-    text-align: center;
   }
 
   .project-info {
-    padding-right: 0;
     margin-bottom: 20px;
   }
 
