@@ -62,7 +62,14 @@ const MainContent = () => {
             >
               Resume
             </button>
-            <button className="projects-btn">Projects</button>
+            <button
+              className="projects-btn"
+              onClick={() => {
+                navigate("/projects"); // Navigate to the resume page
+              }}
+            >
+              Projects
+            </button>
           </div>
           <div>
             <p style={{ "text-align": "justify" }}>🔧 Technical Expertise:</p>
