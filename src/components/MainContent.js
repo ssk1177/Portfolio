@@ -28,25 +28,21 @@ const MainContent = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                className="linkedin-icon"
-                src={linkedInIcon}
-                alt="LinkedIn"
-              />
+              <img className="social-icon" src={linkedInIcon} alt="LinkedIn" />
             </a>
             <a
               href="https://github.com/ssk1177"
               target="_blank"
               rel="noreferrer"
             >
-              <img className="github-icon" src={githubIcon} alt="GitHub" />
+              <img className="social-icon" src={githubIcon} alt="GitHub" />
             </a>
             <a
               href="https://www.kaggle.com/suriender"
               target="_blank"
               rel="noreferrer"
             >
-              <img className="github-icon" src={kaggleIcon} alt="GitHub" />
+              <img className="social-icon" src={kaggleIcon} alt="GitHub" />
             </a>
           </div>
         </div>
@@ -80,12 +76,14 @@ const MainContent = () => {
             </button>
           </div>
           <div>
-            <p style={{ "text-align": "justify" }}>🔧 Technical Expertise:</p>
-            <ul style={{ "text-align": "left" }}>
+            <p style={{ textAlign: "justify" }}>🔧 Technical Expertise:</p>
+            <ul style={{ textAlign: "left" }}>
               <li>
                 Data Engineering
                 <ul>
-                  <li>Building ETL pipelines (Azure Synapse Analytics, AWS Glue)</li>
+                  <li>
+                    Building ETL pipelines (Azure Synapse Analytics, AWS Glue)
+                  </li>
                   <li>Data warehousing (SQL, NoSQL)</li>
                 </ul>
               </li>

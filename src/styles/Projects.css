@@ -31,6 +31,11 @@
   padding-top:30px;
 }
 
+.social-icon {
+    width: 70px;
+    height: 25px;
+}
+
 .bullet-point {
   color: #0056b3; /* Blue bullet point */
 }

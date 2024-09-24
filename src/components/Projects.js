@@ -177,7 +177,7 @@ const Projects = () => {
                 rel="noreferrer"
               >
                 <img
-                  className="github-icon"
+                  className="social-icon"
                   src={colabIcon}
                   alt="Google Colab"
                 />
@@ -190,7 +190,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img className="github-icon" src={githubIcon} alt="GitHub" />
+                <img className="social-icon" src={githubIcon} alt="GitHub" />
               </a>
             )}
             {project.kaggle && (
@@ -200,7 +200,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img className="github-icon" src={kaggleIcon} alt="Kaggle" />
+                <img className="social-icon" src={kaggleIcon} alt="Kaggle" />
               </a>
             )}
           </div>
