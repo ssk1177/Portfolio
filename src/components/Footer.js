@@ -45,8 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="footer-copyright">
-        Designed & Developed by [Your Name] © 2024. Made with passion and code
-        😊
+        © 2024 Suriender Singh. Made with coffee and code. 😊
       </p>
     </footer>
   );
