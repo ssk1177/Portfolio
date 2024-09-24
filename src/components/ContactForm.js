@@ -3,11 +3,6 @@ import "./../styles/ContactForm.css";
 
 const ContactForm = () => {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Form submitted!");
-  };
-
   return (
     <div className="outer-container">
       <div className="form-container">
@@ -22,10 +17,8 @@ const ContactForm = () => {
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}
         >
-          {/* Hidden input for Netlify form handling */}
-          <input type="hidden" name="form-name" value="contact" />
+          
           <input type="hidden" name="bot-field" />
           <div className="form-row">
             <div className="form-group">
