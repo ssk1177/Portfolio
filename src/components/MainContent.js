@@ -4,6 +4,7 @@ import "./../styles/MainContent.css";
 import profilephoto from "./../assets/images/profilephoto.jpeg";
 import linkedInIcon from "./../assets/images/linkedIn.png";
 import githubIcon from "./../assets/images/github.png";
+import kaggleIcon from "./../assets/images/kaggle.png";
 import { useNavigate } from "react-router-dom";
 
 const MainContent = () => {
@@ -39,6 +40,13 @@ const MainContent = () => {
               rel="noreferrer"
             >
               <img className="github-icon" src={githubIcon} alt="GitHub" />
+            </a>
+            <a
+              href="https://www.kaggle.com/suriender"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="github-icon" src={kaggleIcon} alt="GitHub" />
             </a>
           </div>
         </div>
@@ -77,24 +85,24 @@ const MainContent = () => {
               <li>
                 Data Engineering
                 <ul>
-                  <li>Building ETL pipelines</li>
-                  <li>data warehousing (SQL, NoSQL)</li>
+                  <li>Building ETL pipelines (Azure Synapse Analytics, AWS Glue)</li>
+                  <li>Data warehousing (SQL, NoSQL)</li>
                 </ul>
               </li>
               <li>
                 Data Science & Analysis:
                 <ul>
-                  <li>Predictive analytics</li>
-                  <li>machine learning (Python, R)</li>
-                  <li>data visualization (Power BI)</li>
+                  <li>Predictive Analytics</li>
+                  <li>Machine learning (Python, R)</li>
+                  <li>Data visualization (Power BI)</li>
                 </ul>
               </li>
               <li>
                 Full Stack Development
                 <ul>
-                  <li>Web applications (React, Spring Boot)</li>
-                  <li>API development</li>
-                  <li>cloud integration (AWS)</li>
+                  <li>Web applications (React, Python-Flast, OJET)</li>
+                  <li>API development (Java Spring Boot)</li>
+                  <li>Cloud integration (AWS, Netlify, Heroku)</li>
                 </ul>
               </li>
             </ul>
