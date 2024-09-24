@@ -1,7 +1,7 @@
 import React from "react";
-import "./../styles/Contact.css";
+import "./../styles/ContactForm.css";
 
-const Contact = () => {
+const ContactForm = () => {
   return (
     <div className="outer-container">
       <div className="form-container">
@@ -12,14 +12,13 @@ const Contact = () => {
 
         {/* Form */}
         <form
-          name="contactform"
+          name="contact"
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
-          hidden
         >
           {/* Hidden input for Netlify form handling */}
-          <input type="hidden" name="form-name" value="contactform" />
+          <input type="hidden" name="form-name" value="contact" />
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="firstName">First Name *</label>
@@ -62,4 +61,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

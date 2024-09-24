@@ -3,7 +3,7 @@ import React from "react";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+import Contact from "./components/ContactForm";
 import Projects from "./components/Projects";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
