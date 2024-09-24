@@ -11,7 +11,7 @@ const Contact = () => {
         </h1>
 
         {/* Form */}
-        <form name="contactform" method="POST" netlify>
+        <form name="contactform" method="POST" data-netlify="true">
           {/* Hidden input for Netlify form handling */}
           <input type="hidden" name="form-name" value="contactform" />
           <div className="form-row">
