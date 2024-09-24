@@ -1,23 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./../styles/Contact.css";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
   return (
     <div className="outer-container">
       <div className="form-container">
@@ -37,8 +21,6 @@ const Contact = () => {
                 type="text"
                 id="firstName"
                 name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
                 required
               />
             </div>
@@ -49,8 +31,6 @@ const Contact = () => {
                 type="text"
                 id="lastName"
                 name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
                 required
               />
             </div>
@@ -63,8 +43,6 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
                 required
               />
             </div>
@@ -77,8 +55,6 @@ const Contact = () => {
                 type="text"
                 id="subject"
                 name="subject"
-                value={formData.subject}
-                onChange={handleChange}
               />
             </div>
           </div>
@@ -90,8 +66,6 @@ const Contact = () => {
                 id="message"
                 name="message"
                 rows="5"
-                value={formData.message}
-                onChange={handleChange}
               />
             </div>
           </div>
