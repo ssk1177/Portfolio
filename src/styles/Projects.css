@@ -1,7 +1,6 @@
 /* Container for the entire section */
 .projects-container {
   background-color: #e8ddd1;
-  padding: 50px;
   font-family: Arial, sans-serif;
   text-align: -webkit-center;
 }
@@ -29,6 +28,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   color: #000;
+  padding-top:30px;
 }
 
 .bullet-point {
@@ -51,6 +51,11 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   width:50%;
+  flex-direction: column;
+}
+
+.project-section {
+  display: flex;
 }
 
 /* Left side project info */
@@ -83,7 +88,6 @@
 .project-image {
   width: 40%;
   display: flex;
-  justify-content: center;
 }
 
 .project-image img {
@@ -94,6 +98,72 @@
 
 .project-content {
     text-align:left;
+}
+
+.filter-buttons {
+  margin: 20px 0;
+  display: flex; /* Align buttons horizontally */
+  justify-content: center; /* Center the buttons */
+}
+
+.filter-buttons button {
+  margin: 0 10px;
+  padding: 12px 24px; /* Increase padding for a better feel */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  color: white;
+  font-size: 16px; /* Increase font size */
+  font-weight: 600; /* Make font slightly bolder */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.filter-buttons button.active {
+  background: #ff6f61; /* A solid, distinct color for the active button */
+  color: #fff; /* Ensure text is white */
+  font-weight: 700; /* Make the active button bold */
+  border: 2px solid #fff; /* Add a white border to differentiate */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly increase shadow */
+  transform: translateY(-2px); /* Lift the active button slightly */
+}
+
+.filter-buttons button:hover {
+  background: linear-gradient(135deg, #4e0f87, #1a4cbb); /* Darker gradient on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  transform: translateY(-2px); /* Lift the button on hover */
+}
+
+.filter-buttons button:focus {
+  outline: none; /* Remove the default outline */
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  padding-left:20px;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #0077b5; /* LinkedIn color */
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #005582; /* Darker shade on hover */
+}
+
+/* Tech Stack */
+.tech-stack {
+  background-color: greenyellow;
+}
+
+.icon-text {
+  text-wrap:nowrap;
+  color: darkblue;
 }
 
 /* Media queries for responsiveness */
