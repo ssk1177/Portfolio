@@ -11,7 +11,13 @@ const Contact = () => {
         </h1>
 
         {/* Form */}
-        <form name="contactform" method="POST" data-netlify="true">
+        <form
+          name="contactform"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          hidden
+        >
           {/* Hidden input for Netlify form handling */}
           <input type="hidden" name="form-name" value="contactform" />
           <div className="form-row">
