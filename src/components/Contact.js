@@ -11,9 +11,9 @@ const Contact = () => {
         </h1>
 
         {/* Form */}
-        <form name="connect" method="POST" netlify>
+        <form name="contactform" method="POST" netlify>
           {/* Hidden input for Netlify form handling */}
-          <input type="hidden" name="form-name" value="connect" />
+          <input type="hidden" name="form-name" value="contactform" />
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="firstName">First Name *</label>
