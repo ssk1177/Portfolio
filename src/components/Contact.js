@@ -18,11 +18,6 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted", formData);
-  };
-
   return (
     <div className="outer-container">
       <div className="form-container">

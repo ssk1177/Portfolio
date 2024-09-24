@@ -21,10 +21,10 @@ const Header = () => {
             <Link to="/resume">RESUME</Link>
           </li>
           <li>
-            <a href="/projects">PROJECTS</a>
+            <Link to="/projects">PROJECTS</Link>
           </li>
           <li>
-            <a href="/contact">CONTACT</a>
+            <Link to="/contact">CONTACT</Link>
           </li>
         </ul>
       </nav>

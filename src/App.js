@@ -11,15 +11,6 @@ import Resume from "./components/Resume";
 
 function App() {
   return (
-    /*<div className="App">
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
-    /*<Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} /> */
-
     <Router>
       <div className="App">
         <Header />
