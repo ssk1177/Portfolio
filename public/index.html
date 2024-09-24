@@ -24,7 +24,14 @@
     -->
   <title>React App</title>
 
-  <input type="hidden" name="form-name" value="contact" />
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="firstName" />
+    <input type="text" name="lastName" />
+    <input type="email" name="email" />
+    <input type="email" name="subject" />
+    <textarea name="message" />
+  </form>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X49JF6W5SN"></script>
   <script>
