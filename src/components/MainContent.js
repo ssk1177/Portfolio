@@ -8,9 +8,8 @@ import kaggleIcon from "./../assets/images/kaggle.png";
 import { useNavigate } from "react-router-dom";
 
 const MainContent = () => {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-    
   return (
     <main className="main-content">
       <div className="center-section">
@@ -42,7 +41,7 @@ const MainContent = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img className="social-icon" src={kaggleIcon} alt="GitHub" />
+              <img className="social-icon" src={kaggleIcon} alt="Kaggle" />
             </a>
           </div>
         </div>
@@ -61,7 +60,7 @@ const MainContent = () => {
             <button
               className="resume-btn"
               onClick={() => {
-                navigate("/resume"); // Navigate to the resume page
+                navigate("/resume");
               }}
             >
               Resume
@@ -69,7 +68,7 @@ const MainContent = () => {
             <button
               className="projects-btn"
               onClick={() => {
-                navigate("/projects"); // Navigate to the resume page
+                navigate("/projects");
               }}
             >
               Projects
@@ -98,7 +97,7 @@ const MainContent = () => {
               <li>
                 Full Stack Development
                 <ul>
-                  <li>Web applications (React, Python-Flast, OJET)</li>
+                  <li>Web applications (React, Python-Flask, OJET)</li>
                   <li>API development (Java Spring Boot)</li>
                   <li>Cloud integration (AWS, Netlify, Heroku)</li>
                 </ul>

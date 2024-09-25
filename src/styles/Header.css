@@ -1,13 +1,14 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 10vh;
     background-color: white;
+    padding: 0 50px;
 }
 
 .logo {
     display: flex;
-    padding-left: 50px;
     align-items: center;
 }
 
@@ -17,14 +18,6 @@
     background-color: blue;
 }
 
-.navigation {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    align-items: center;
-    padding-right: 50px;
-}
-
 .logo .name {
     font-weight: bold;
     font-size: 25px;
@@ -32,22 +25,27 @@
     padding-left: 10px;
 }
 
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
     font-family: fangsong;
-    position: relative; /* Add position relative for positioning pseudo-elements */
 }
 
 .nav-links li {
-    position: relative; /* For positioning the ::before and ::after elements */
+    position: relative;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: black;
-    padding: 10px 0; /* Add padding for better spacing */
+    padding: 10px 0;
 }
 
 .nav-links li::before,
@@ -55,29 +53,75 @@
     content: "";
     position: absolute;
     width: 0;
-    height: 2px; /* Height of the line */
-    background-color: #000; /* Color of the line */
-    transition: width 0.3s ease; /* Smooth transition for width */
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
 }
 
 .nav-links li::before {
-    top: 0; /* Position above the text */
-    left: 50%; /* Center align */
-    transform: translateX(-50%); /* Center it */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links li::after {
-    bottom: 0; /* Position below the text */
-    left: 50%; /* Center align */
-    transform: translateX(-50%); /* Center it */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links li:hover::before,
 .nav-links li:hover::after {
-    width: 100%; /* Expand to full width on hover */
+    width: 100%;
 }
 
-/* Optional: Add some styling for better appearance */
 .nav-links li:hover a {
-    color: blue; /* Change text color on hover */
+    color: blue;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack the logo and nav on top of each other */
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        padding-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack the links vertically */
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        padding: 10px 20px; /* Increase padding for better touch targets */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo .name {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    .nav-links li a {
+        padding: 8px 15px;
+    }
 }

@@ -144,3 +144,71 @@ body {
   margin: 5px 0; /* Space between points */
   text-align:left;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* General adjustments for smaller screens */
+  .resume-outer {
+    padding: 20px;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .resume-title {
+    flex-direction: column; /* Stack the title and download button vertically */
+    align-items: flex-start;
+  }
+
+  .resume-header {
+    font-size: 28px; /* Smaller font for smaller screens */
+  }
+
+  .download-cv-button {
+    margin-top: 10px; /* Add space above the button */
+    padding: 8px 16px;
+  }
+
+  .sub-header {
+    font-size: 24px; /* Adjust sub-header size */
+  }
+
+  .tile-container {
+    flex-direction: column; /* Stack the tiles vertically */
+    gap: 10px; /* Less space between tiles */
+  }
+
+  .tile {
+    flex: 1 1 100%; /* Full width for each tile */
+    padding: 15px; /* Smaller padding for mobile */
+  }
+
+  .tile-description {
+    font-size: 14px; /* Smaller font size for descriptions */
+  }
+  
+  .resume-container {
+    padding: 10px; /* Reduced padding around the container */
+  }
+}
+
+/* Very Small Mobile Screens (like phones in portrait mode) */
+@media (max-width: 480px) {
+  .resume-header {
+    font-size: 24px; /* Even smaller header font for very small screens */
+  }
+
+  .download-cv-button {
+    font-size: 14px; /* Adjust button size */
+    padding: 8px 12px;
+  }
+
+  .sub-header {
+    font-size: 20px; /* Smaller sub-header */
+  }
+
+  .tile {
+    padding: 10px;
+  }
+}
+

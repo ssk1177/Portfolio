@@ -1,6 +1,6 @@
 .footer {
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px 10px; /* Increased padding for better touch interaction */
     background-color: #f9f9f9;
     border-top: 2px solid #e0e0e0;
     color: #333;
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 20px; /* Reduced padding on smaller screens */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
@@ -19,6 +19,7 @@
     display: flex;
     gap: 20px; /* Adds space between Call and Write */
     align-items: center;
+    flex-direction: column; /* Stack content vertically on mobile */
 }
 
 .contact-info p {
@@ -29,6 +30,7 @@
 .footer-social-links {
     display: flex;
     gap: 15px;
+    margin-top: 10px; /* Added space between the contact and social links */
 }
 
 .footer-social-links a {
@@ -45,4 +47,41 @@
     margin-top: 10px;
     font-size: 14px;
     color: #777;
+}
+
+/* Media Query for Tablet Screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack the contact info and social links vertically */
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .contact-info {
+        gap: 10px; /* Reduce gap on smaller screens */
+    }
+
+    .footer-social-links {
+        justify-content: center; /* Center social links */
+        margin-top: 20px;
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 480px) {
+    .footer-content {
+        padding: 0 10px; /* Reduce padding further for smaller screens */
+    }
+
+    .contact-info p {
+        font-size: 14px; /* Slightly smaller font for mobile */
+    }
+
+    .footer-social-links a {
+        font-size: 20px; /* Reduce icon size on smaller screens */
+    }
+
+    .footer-copyright {
+        font-size: 12px; /* Slightly smaller copyright text */
+    }
 }
