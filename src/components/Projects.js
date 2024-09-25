@@ -81,7 +81,7 @@ const Projects = () => {
         "The digits dataset consists of 8x8 pixel images of digits. The images attribute of the dataset stores 8x8 arrays of grayscale values for each image.",
       image: digits,
       category: "Data Science",
-      techStack: "Python, ETL, Pandas",
+      techStack: "Python, Matplotlib, Scipy, Numpy, Skopt, Sklearn",
       colab:
         "https://colab.research.google.com/drive/1g8VFbUUff0ySHiAlFq-F98Tff9XTvwpg?usp=sharing",
       github:
