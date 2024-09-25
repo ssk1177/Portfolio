@@ -190,3 +190,227 @@
     width: 100%;
   }
 }
+
+/* Mobile-first approach */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 10px;
+  }
+
+  .projects-title {
+    font-size: 28px;
+  }
+
+  .projects-description {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  /* Adjust project card width for smaller screens */
+  .project {
+    width: 100%; /* Make project cards full-width on mobile */
+    margin-bottom: 20px;
+  }
+
+  /* Stack project details and image vertically on mobile */
+  .project-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust project info for better readability */
+  .project-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-name {
+    font-size: 22px;
+  }
+
+  .project-role {
+    font-size: 16px;
+  }
+
+  .project-description {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .project-image {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Reduce social icon sizes */
+  .social-icon {
+    width: 50px;
+    height: auto;
+  }
+
+  /* Filter buttons styling for mobile */
+  .filter-buttons button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-title {
+    font-size: 24px;
+  }
+
+  .projects-description {
+    font-size: 14px;
+  }
+
+  .filter-buttons button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .tech-stack {
+    font-size: 12px;
+  }
+
+  .social-icons {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  /* Adjust the vertical bar on mobile */
+  .vertical-bar {
+    height: 20px;
+  }
+}
+
+/* General mobile styling for screens less than 768px */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 5px; /* Reduce padding for mobile */
+  }
+
+  .projects-header {
+    margin-bottom: 30px;
+  }
+
+  .projects-title {
+    font-size: 24px; /* Reduce title size */
+  }
+
+  .projects-description {
+    font-size: 14px; /* Smaller font size for readability */
+    max-width: 100%; /* Take full width */
+  }
+
+  /* Project Section Styling */
+  .project {
+    width: 100%; /* Full width for project cards */
+    margin-bottom: 20px;
+    padding: 10px; /* Reduce padding inside project cards */
+  }
+
+  .project-section {
+    flex-direction: column; /* Stack project details and image vertically */
+    align-items: center;
+  }
+
+  .project-info {
+    width: 100%;
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .project-name {
+    font-size: 20px; /* Adjust text size */
+  }
+
+  .project-role {
+    font-size: 16px; /* Adjust role size */
+    margin-bottom: 10px;
+  }
+
+  .project-description {
+    font-size: 14px;
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .project-image {
+    width: 100%; /* Full width for project image on mobile */
+    margin-top: 10px;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Consistent border radius */
+  }
+
+  /* Social Icons Styling */
+  .social-icons {
+    justify-content: center; /* Center-align social icons */
+    padding: 10px 0; /* Add padding between icons and content */
+  }
+
+  .social-icon {
+    width: 40px; /* Smaller icon size on mobile */
+    height: auto;
+    margin-left: 10px;
+  }
+
+  /* Filter buttons: stack vertically on small screens */
+  .filter-buttons {
+    flex-direction: column;
+    gap: 10px; /* Add spacing between buttons */
+    width: 100%; /* Full width */
+  }
+
+  .filter-buttons button {
+    width: 80%; /* Make buttons wider on mobile */
+    margin: 5px auto; /* Center the buttons */
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Tech stack container */
+  .tech-stack {
+    font-size: 12px;
+    padding: 10px;
+    background-color: #f0f0f0; /* Subtle background for readability */
+    border-radius: 5px;
+  }
+}
+
+/* Specific adjustments for very small screens (less than 480px) */
+@media (max-width: 480px) {
+  .projects-title {
+    font-size: 20px; /* Further reduce title size */
+  }
+
+  .projects-description {
+    font-size: 12px;
+  }
+
+  .project {
+    padding: 5px;
+  }
+
+  .project-info {
+    margin-bottom: 15px; /* Add more spacing between text and image */
+  }
+
+  .filter-buttons button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .social-icon {
+    width: 35px; /* Smaller social icons */
+  }
+}
+
