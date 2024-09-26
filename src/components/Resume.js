@@ -93,6 +93,8 @@ const Resume = () => {
               position="Post Degree Diploma in Predictive Analytics"
               company="University of Winnipeg"
               location="Winnipeg, Canada"
+              grade="Grade: 4.24/4.5"
+              awards="Awards: Program Top Student"
               description={[
                 "<ul><li>Designed and implemented Python-based ETL pipeline in Jupyter Notebook to integrate diverse data formats into MongoDB and Postgres databases, and execute transformations.</li><br/><li>Generated statistical reports and visualizations for datasets, including Malware detection in IoT devices and Credit card fraud prediction.</li><br/><li>Employed shell scripting to orchestrate ETL processes, handling ingestion, extraction, and data transformations from remote sources.</li></ul>",
               ]}
@@ -104,6 +106,8 @@ const Resume = () => {
               company="National Institute of Technology (NIT)"
               location="Trichy, India"
               wes_equivalency="WES Canadian Equivalency: Master's degree."
+              grade="Grade: 8.2/10"
+              awards="Awards: Honors"
               description={[
                 "<b>Publications:</b> <br/><ul><li> Suriender Singh and S. Selvakumar, “Detection of Distributed Denial of Service Attacks Using Panel of Experts”, Bilingual International Conference on Information Technology: Yesterday, Today, and Tomorrow, 19 - 21, Feb.’15, DRDO, Delhi, pp. 248 - 254, DESIDOC. </li><br/><li> Suriender Singh and S. Selvakumar, “A hybrid feature subset selection by combining filters and genetic algorithm”, In Proceedings of International Conference on Computing, Communication & Automation (ICCCA), Greater Noida, India, 15-16 May 2015, pp. 283-289.</li></ul>",
               ]}
@@ -115,6 +119,8 @@ const Resume = () => {
               company="Uttarakhand Technical University"
               location="Dehradun, India"
               wes_equivalency="WES Canadian Equivalency: Bachelor's degree (four years)."
+              grade="Grade: 76%"
+              awards="Awards: Honors"
             />
           </div>
         </section>
@@ -130,6 +136,8 @@ const Tile = ({
   location,
   description,
   wes_equivalency,
+  grade,
+  awards,
 }) => (
   <div className="tile">
     <div className="tile-header">
@@ -138,6 +146,8 @@ const Tile = ({
       <p className="tile-company">{company}</p>
       <p className="tile-location">{location}</p>
       <p className="tile-wes">{wes_equivalency}</p>
+      <p className="tile-grade">{grade}</p>
+      <p className="tile-awards">{awards}</p>
     </div>
     <div className="tile-description">
       {Array.isArray(description) ? (

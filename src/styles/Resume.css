@@ -101,7 +101,7 @@ body {
   font-size: 18px; /* Increased size for better visibility */
 }
 
-.tile-company {
+.tile-company, .tile-grade, .tile-awards {
   font-weight: bold;
   color: Red; /* Darker text for readability */
   margin: 2px 0; /* Margin for spacing */
