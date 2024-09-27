@@ -4,6 +4,10 @@ html, body {
   padding: 0;
 }
 
+#root {
+  height: 100%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -11,7 +15,8 @@ html, body {
 }
 
 main {
-  flex: 1;
+  /* flex: 1; */
+  flex-grow: 1;
 }
 
 footer {
@@ -19,4 +24,6 @@ footer {
   padding: 1rem;
   color: white;
   text-align: center;
+  position: relative;
+  margin-top: auto; 
 }

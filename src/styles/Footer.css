@@ -4,7 +4,8 @@
     background-color: #f9f9f9;
     border-top: 2px solid #e0e0e0;
     color: #333;
-    height: auto; /* Auto height to adjust based on content */
+    /* height: auto; Auto height to adjust based on content */
+    position:relative;
 }
 
 .footer-content {

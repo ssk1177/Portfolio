@@ -1,8 +1,9 @@
 /* MainContent.css */
 .main-content {
+    flex-grow:1;
     display: flex;
     padding: 50px;
-    height: 70vh;
+    /* height: 100vh; */
     justify-content: center;
     background: linear-gradient(to right, rgb(230, 218, 206) 30%, white 30%);
 }
