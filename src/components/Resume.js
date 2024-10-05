@@ -89,19 +89,45 @@ const Tile = ({
 }) => (
   <div className="tile">
     <div className="tile-header">
-      <h3 className="tile-duration">{duration}</h3>
-      <p className="tile-position"><strong>Position: </strong>{position}</p>
-      <p className="tile-company"><strong>Company: </strong>{company}</p>
-      <p className="tile-location"><strong>Location: </strong>{location}</p>
-      {wes_equivalency && <p className="tile-wes"><strong>WES Equivalency: </strong>{wes_equivalency}</p>}
-      {grade && <p className="tile-grade"><strong>Grade: </strong>{grade}</p>}
-      {awards && <p className="tile-awards"><strong>Awards: </strong>{awards}</p>}
+      <div className="tile-work">
+        <h3 className="tile-company">
+          {company}
+        </h3>
+        <h3 className="tile-duration">{duration}</h3>
+      </div>
+      <div className="tile-pos-loc">
+        <p className="tile-position">
+          <strong>{position}</strong>
+        </p>
+
+        <p className="tile-location">
+          <strong> {location} </strong>
+        </p>
+      </div>
+      {wes_equivalency && (
+        <p className="tile-wes">
+          <strong>WES Canadian Equivalency: </strong>
+          {wes_equivalency}
+        </p>
+      )}
+      {grade && (
+        <p className="tile-grade">
+          <strong>Grade: </strong>
+          {grade}
+        </p>
+      )}
+      {awards && (
+        <p className="tile-awards">
+          <strong>Awards: </strong>
+          {awards}
+        </p>
+      )}
     </div>
     <div className="tile-description">
       {Array.isArray(description) ? (
         description.map((desc, index) => (
           <div key={index}>
-            {desc.project ? <h4>{desc.project}</h4> : null}
+            {desc.project ? <h4>Project: {desc.project}</h4> : null}
             <ul>
               {Array.isArray(desc.points) ? (
                 desc.points.map((point, idx) => (

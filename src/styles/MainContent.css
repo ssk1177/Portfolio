@@ -15,6 +15,15 @@
     align-items: flex-start;
 }
 
+.name-style {
+    font-size: 40px;
+    text-align: left;
+}
+
+.name-bio {
+    text-align: justify;
+}
+
 .profile-card {
     width: 30%;
     background-color: rgba(244, 236, 230, 1);
@@ -76,7 +85,7 @@
 }
 
 .buttons {
-    margin-top: 20px;
+    align-self:center;
 }
 
 .resume-btn,

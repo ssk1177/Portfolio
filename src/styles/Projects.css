@@ -81,13 +81,11 @@
   color: #0056b3;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .project-role {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .project-description {
@@ -109,6 +107,10 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.project-content {
+  text-align:left;
 }
 
 /* Filter buttons */
@@ -136,6 +138,12 @@
   background: #ff6f61;
   font-weight: 700;
   transform: translateY(-2px);
+}
+
+.icon-text {
+  color: crimson;
+  font-weight: bold;
+  text-decoration:underline;
 }
 
 .filter-buttons button:hover {

@@ -63,7 +63,7 @@
             "position": "Post Degree Diploma in Predictive Analytics",
             "company": "University of Winnipeg",
             "location": "Winnipeg, Canada",
-            "grade": "Grade: 4.24/4.5",
+            "grade": "4.24/4.5",
             "awards": "Awarded 'Program Top Student'",
             "description": [
                 "Designed and implemented Python-based ETL pipeline in Jupyter Notebook to integrate diverse data formats into MongoDB and Postgres databases, and execute transformations.",
@@ -76,8 +76,8 @@
             "position": "Master of Science (by Research) in Computer Science and Technology",
             "company": "National Institute of Technology (NIT)",
             "location": "Trichy, India",
-            "wes_equivalency": "WES Canadian Equivalency: Master's degree.",
-            "grade": "Grade: 8.2/10",
+            "wes_equivalency": "Master's degree.",
+            "grade": "8.2/10",
             "description": [
                 "<b>Publications:</b> <br/><ul><li> Suriender Singh and S. Selvakumar, “Detection of Distributed Denial of Service Attacks Using Panel of Experts”, Bilingual International Conference on Information Technology: Yesterday, Today, and Tomorrow, 19 - 21, Feb.’15, DRDO, Delhi, pp. 248 - 254, DESIDOC. </li><br/><li> Suriender Singh and S. Selvakumar, “A hybrid feature subset selection by combining filters and genetic algorithm”, In Proceedings of International Conference on Computing, Communication & Automation (ICCCA), Greater Noida, India, 15-16 May 2015, pp. 283-289.</li></ul>"
             ]
@@ -87,8 +87,8 @@
             "position": "Bachelor of Technology (B. Tech) in Information Technology",
             "company": "Uttarakhand Technical University",
             "location": "Dehradun, India",
-            "wes_equivalency": "WES Canadian Equivalency: Bachelor's degree (four years).",
-            "grade": "Grade: 76%"
+            "wes_equivalency": "Bachelor's degree (four years).",
+            "grade": "76%"
         }
     ]
 }

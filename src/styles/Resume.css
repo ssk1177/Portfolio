@@ -8,6 +8,12 @@
   margin: 0 auto;
 }
 
+.tile-work {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
 .resume-header {
   font-size: 34px;
   font-weight: bold;
@@ -43,14 +49,16 @@
   transform: translateY(-5px); /* Add a hover effect to lift the tile slightly */
 }
 
-.tile-header {
-  margin-bottom: 15px;
-}
-
 .tile-header h3 {
   font-size: 18px;
   color: #333;
   margin: 0;
+}
+
+.tile-pos-loc {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
 }
 
 .tile-position, .tile-company, .tile-location, .tile-wes, .tile-grade, .tile-awards {

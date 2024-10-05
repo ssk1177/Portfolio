@@ -47,10 +47,11 @@ const MainContent = () => {
         </div>
         <div className="bio-section">
           <div>
-            <h1 style={{ fontSize: "50px", textAlign: "left" }}>
-              Hello! This is <b>Suriender</b>
+            <h3>Hello!</h3>
+            <h1 className="name-style">
+              I'm <b>Suriender</b>
             </h1>
-            <p style={{ textAlign: "justify" }}>
+            <p className="name-bio">
               With a unique blend of expertise across data engineering, data
               science, data analysis, and full stack development, I specialize
               in building end-to-end data-driven solutions.
