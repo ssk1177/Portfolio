@@ -1,219 +1,79 @@
-/* General Styles */
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-}
-
 .resume-container {
-  display: flex;
-  justify-content: center;
   padding: 20px;
-  background-color: #e8ddd1; /* Background similar to the beige tone */
+  background-color: #f9f9f9;
 }
 
 .resume-outer {
-  max-width: 1200px;
-  background: white; /* White background for the resume */
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px; /* Padding for better spacing */
-}
-
-/* Resume Title Section */
-.resume-title {
-  display: flex;
-  justify-content: space-between; /* Space between title and button */
-  align-items: center;
-  padding: 20px 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .resume-header {
-  text-align: center; /* Centering the resume header */
-  font-size: 36px;
+  font-size: 34px;
   font-weight: bold;
-  color: #333; /* Darker color for better readability */
+  margin-bottom: 20px;
 }
 
-.bullet-point {
-  color: #0056b3; /* Blue bullet point */
-}
-
-/* Download CV Button */
 .download-cv-button {
-  background-color: #007bff;
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
+  float:right;
 }
 
-.download-cv-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05); /* Slight scaling effect on hover */
-}
-
-/* Experience and Education Sections */
-.experience-section,
-.education-section {
-  padding: 20px 0;
-}
-
-.sub-header {
-  font-size: 28px;
-  margin-bottom: 10px; /* Reduced margin for compactness */
-  border-bottom: 2px solid #0056b3; /* Bottom border for emphasis */
-  padding-bottom: 5px;
-}
-
-/* Tile Styles */
 .tile-container {
   display: flex;
-  flex-wrap: wrap; /* Wrap tiles to the next line */
-  gap: 20px; /* Space between tiles */
+  flex-direction: column;
+  gap: 20px; /* Creates spacing between tiles */
 }
 
 .tile {
-  flex: 1 1 calc(45% - 20px); /* Responsive width, two tiles per row with some margin */
-  background-color: #f9f9f9; /* Light background for tiles */
+  background-color: white;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #4caf50;
   transition: transform 0.2s;
 }
 
 .tile:hover {
-  transform: scale(1.02); /* Slight scaling effect on hover */
-}
-
-.tile-wes {
-  color: blueviolet;
+  transform: translateY(-5px); /* Add a hover effect to lift the tile slightly */
 }
 
 .tile-header {
-  margin-bottom: 10px; /* Space between header and description */
-  text-align: center;
+  margin-bottom: 15px;
 }
 
-.tile-duration {
-  color: #0056b3; /* Blue text */
-  font-weight: bold;
-  font-size: 18px; /* Increased size for better visibility */
+.tile-header h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
 }
 
-.tile-company, .tile-grade, .tile-awards {
-  font-weight: bold;
-  color: Red; /* Darker text for readability */
-  margin: 2px 0; /* Margin for spacing */
+.tile-position, .tile-company, .tile-location, .tile-wes, .tile-grade, .tile-awards {
+  font-size: 14px;
+  color: #777;
 }
 
-.tile-position,
-.tile-location {
-  font-weight: bold;
-  color: #333; /* Darker text for readability */
-  margin: 2px 0; /* Margin for spacing */
-}
-
-/* Tile Description */
 .tile-description {
+  padding-top: 10px;
+}
+
+.tile-description h4 {
+  margin-bottom: 5px;
   font-size: 16px;
-  line-height: 1.5em;
-  color: #555; /* Slightly gray text for descriptions */
-  
+  color: #4caf50;
 }
 
-/* Project Description Formatting */
-.project-description {
-  margin: 10px 0; /* Space between project descriptions */
-  text-align: center;
+.tile-description ul {
+  padding-left: 20px;
 }
 
-.description-text {
-  margin: 5px 0; /* Space for description text */
-  text-align:justify;
+.tile-description li {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
 }
-
-/* Highlighting WES Equivalency */
-.project-title {
-  color: #0056b3; /* Highlighted color for project titles */
-  font-weight: bold;
-}
-
-.wes-highlight {
-  font-weight: bold;
-  color: #ff5722; /* Orange color for WES equivalency */
-}
-
-/* Point Item Formatting */
-.point-item {
-  margin: 5px 0; /* Space between points */
-  text-align:left;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  /* General adjustments for smaller screens */
-  .resume-outer {
-    padding: 20px;
-    max-width: 100%;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .resume-title {
-    flex-direction: column; /* Stack the title and download button vertically */
-    align-items: flex-start;
-  }
-
-  .resume-header {
-    font-size: 28px; /* Smaller font for smaller screens */
-  }
-
-  .download-cv-button {
-    margin-top: 10px; /* Add space above the button */
-    padding: 8px 16px;
-  }
-
-  .sub-header {
-    font-size: 24px; /* Adjust sub-header size */
-  }
-
-  .tile-container {
-    flex-direction: column; /* Stack the tiles vertically */
-    gap: 10px; /* Less space between tiles */
-  }
-
-  .tile {
-    flex: 1 1 100%; /* Full width for each tile */
-    padding: 15px; /* Smaller padding for mobile */
-  }
-
-  .tile-description {
-    font-size: 14px; /* Smaller font size for descriptions */
-  }
-  
-  .resume-container {
-    padding: 10px; /* Reduced padding around the container */
-  }
-}
-
-/* Very Small Mobile Screens (like phones in portrait mode) */
-@media (max-width: 480px) {
-  .resume-header {
-    font-size: 24px; /* Even smaller header font for very small screens */
-  }
-
-  .download-cv-button {
-    font-size: 14px; /* Adjust button size */
-    padding: 8px 12px;
-  }
-
-  .sub-header {
-    font-size: 20px; /* Smaller sub-header */
-  }
-
-  .tile {
-    padding: 10px;
-  }
-}
-

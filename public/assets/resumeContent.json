@@ -1,0 +1,94 @@
+{
+    "title": "Resume",
+    "downloadCv": {
+        "link": "/assets/Suriender_Singh_DA.pdf",
+        "filename": "suriender_singh_CV.pdf"
+    },
+    "experience": [
+        {
+            "duration": "June 29, 2015 - Sep 24, 2020",
+            "position": "Senior Applications Engineer",
+            "company": "Oracle India Pvt. Ltd.",
+            "location": "Bangalore, India",
+            "projects": [
+                {
+                    "title": "Adaptive Intelligent Apps for Manufacturing (AIAMFG)",
+                    "points": [
+                        "<b>Identified Patterns and Trends</b>: Utilized Python machine learning algorithms (scikit-learn, pandas) to predict the quality of final manufactured products based on raw material quality and manufacturing processes. This analysis enabled manufacturing clients to make data-driven decisions, reducing faulty products by nearly 20% for one major customer.",
+                        "<b>Machine Learning Implementation</b>: Led the development of a model-building module and implemented machine learning algorithms (decision tree, random forest, SVM) using Oracle Machine Learning for R(ORE).",
+                        "<b>Automation and Efficiency</b>: Developed Selenium automation for web application testing, reducing over 40 employee hours per 3-4 month release cycle, accelerating product delivery, and achieving cost efficiencies."
+                    ]
+                },
+                {
+                    "title": "Oracle Validation Test Suite (VTS)",
+                    "points": [
+                        "Implemented stress testing algorithms in C language.",
+                        "Developed cross-platform features for VTS.",
+                        "Used GDB for debugging C code.",
+                        "Optimized software solutions across various operating systems."
+                    ]
+                }
+            ]
+        },
+        {
+            "duration": "Nov 25, 2020 - Aug 11, 2023",
+            "position": "Senior Member of Technical Staff",
+            "company": "Agnity Communications (Acquired by TNS)",
+            "location": "Noida, India",
+            "projects": [
+                {
+                    "title": "Defend",
+                    "points": [
+                        "Led Team Management and Development: Directed and mentored a team of four developers in an Agile environment using Scrum and Kanban, ensuring timely delivery of high-quality software solutions aligned with organizational goals.",
+                        "Developed Full-Stack Applications: Built end-to-end applications integrating frontend technologies (React, HTML, CSS, JavaScript) and backend solutions (SQL, Oracle Database, Java Spring Boot, PL/SQL), showcasing strong problem-solving abilities. Used Docker-compose to containerise multiple components of the application.",
+                        "API Development and Proof of Concept: Designed and maintained REST APIs using Java Spring Boot and conducted POC demonstrations for stakeholders and clients.",
+                        "Enhanced Software Delivery and Quality: Managed requirements, maintained documentation, performed code reviews, and implemented CI/CD pipelines with GIT for efficient version control and high-quality releases."
+                    ]
+                },
+                {
+                    "title": "ATF (Advanced Toll-Free)",
+                    "points": [
+                        "Managed a team of four developers on agile practices.",
+                        "Orchestrated task schedules and held daily stand-ups.",
+                        "Captured customer requirements and documented them comprehensively.",
+                        "Conducted code reviews for quality assurance."
+                    ]
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "duration": "September 2023 – October 2024 (Anticipated)",
+            "position": "Post Degree Diploma in Predictive Analytics",
+            "company": "University of Winnipeg",
+            "location": "Winnipeg, Canada",
+            "grade": "Grade: 4.24/4.5",
+            "awards": "Awarded 'Program Top Student'",
+            "description": [
+                "Designed and implemented Python-based ETL pipeline in Jupyter Notebook to integrate diverse data formats into MongoDB and Postgres databases, and execute transformations.",
+                "Generated statistical reports and visualizations for datasets, including Malware detection in IoT devices and Credit card fraud prediction.",
+                "Employed shell scripting to orchestrate ETL processes, handling ingestion, extraction, and data transformations from remote sources."
+            ]
+        },
+        {
+            "duration": "October 2012 – June 2015",
+            "position": "Master of Science (by Research) in Computer Science and Technology",
+            "company": "National Institute of Technology (NIT)",
+            "location": "Trichy, India",
+            "wes_equivalency": "WES Canadian Equivalency: Master's degree.",
+            "grade": "Grade: 8.2/10",
+            "description": [
+                "<b>Publications:</b> <br/><ul><li> Suriender Singh and S. Selvakumar, “Detection of Distributed Denial of Service Attacks Using Panel of Experts”, Bilingual International Conference on Information Technology: Yesterday, Today, and Tomorrow, 19 - 21, Feb.’15, DRDO, Delhi, pp. 248 - 254, DESIDOC. </li><br/><li> Suriender Singh and S. Selvakumar, “A hybrid feature subset selection by combining filters and genetic algorithm”, In Proceedings of International Conference on Computing, Communication & Automation (ICCCA), Greater Noida, India, 15-16 May 2015, pp. 283-289.</li></ul>"
+            ]
+        },
+        {
+            "duration": "June 2007 – May 2011",
+            "position": "Bachelor of Technology (B. Tech) in Information Technology",
+            "company": "Uttarakhand Technical University",
+            "location": "Dehradun, India",
+            "wes_equivalency": "WES Canadian Equivalency: Bachelor's degree (four years).",
+            "grade": "Grade: 76%"
+        }
+    ]
+}
