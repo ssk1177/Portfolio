@@ -1,0 +1,60 @@
+[
+    {
+        "name": "JobWizard",
+        "role": "AI-Based Application for Automating the Job Application Process",
+        "description": "An end-to-end intelligent application that streamlines the job search and application process. It leverages BeautifulSoup to extract job openings from platforms like LinkedIn and Indeed, evaluates the compatibility of these listings with the user's resume using TF-IDF and BERT models, and automatically submits applications for positions that match the user's qualifications.",
+        "image": "jobwizard.png",
+        "category": "Full Stack Development",
+        "techStack": "Java Spring Boot, React, Python, Machine Learning (TF-IDF Cosine, Bert), MySQL, CI/CD, Hosted on (Amazon EC2, AWS S3)",
+        "github": "https://github.com/ssk1177/JobWizard"
+    },
+    {
+        "name": "Workshala",
+        "role": "Portal aimed at providing a bridge between organizations and job seekers.",
+        "description": "An advertiser can post job requirements, search for resumes, connect with job seekers, and schedule an interview process. Job seekers can search for organizations, apply to posts, and track their interview process. This helps both organizations and job seekers connect and grow together.",
+        "image": "workshala.png",
+        "category": "Full Stack Development",
+        "techStack": "React, Redux, MongoDB, Netlify, Figma",
+        "github": "https://github.com/pesto-students/workshala-fe-n13-beta-2"
+    },
+    {
+        "name": "Breast Cancer Wisconsin (Diagnostic)",
+        "role": "Predicting whether a patient has breast cancer based on diagnostic measurements.",
+        "description": "This project uses machine learning to analyze diagnostic measurements and predict breast cancer presence.",
+        "image": "Breast_Cancer.png",
+        "category": "Data Science",
+        "techStack": "Python, SKlearn, Pandas, Numpy, Seaborn, Scipy",
+        "colab": "https://colab.research.google.com/drive/1EjqlHFlGjQ6jBR35Dlv3z7nETdGSaSLa?usp=sharing",
+        "github": "https://github.com/ssk1177/Predictive-Analytics/blob/main/Breast_Cancer_Wisconsin_(Diagnostic).ipynb"
+    },
+    {
+        "name": "Titanic passengers Survival Analysis",
+        "role": "The original Titanic dataset, describing the survival status of individual passengers on the Titanic.",
+        "description": "The objective is to evaluate tree-based ensemble models including random forest, gradient boosted and adaboost classifiers using the cleaned and preprocessed version of the Titanic dataset.",
+        "image": "titanic.png",
+        "category": "Data Science",
+        "techStack": "Python, SKlearn, Pandas, Numpy, Matplotlib, seaborn, Ensembles (RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier)",
+        "colab": "https://colab.research.google.com/drive/1gRXuRCSSodzaDX2WBzgjtV7SR2IUzE7z?usp=sharing",
+        "github": "https://github.com/ssk1177/Predictive-Analytics/blob/main/Titanic_passengers_Survival_Analysis.ipynb"
+    },
+    {
+        "name": "ETL with Python",
+        "role": "The Aim is to perform ETL (Extract, Transform and Load) on different file formats (json, xml, csv).",
+        "description": "Implemented an ETL pipeline in Python that ingests and integrates data from sources in different file formats, transforms the data, and loads the transformed data into a destination repository.",
+        "image": "etl.png",
+        "category": "Data Science",
+        "techStack": "Python, ETL, Pandas",
+        "kaggle": "https://www.kaggle.com/code/suriender/etl-with-python/notebook",
+        "github": "https://github.com/ssk1177/Predictive-Analytics/blob/main/ETL_with_Python.ipynb"
+    },
+    {
+        "name": "Evaluation & Optimization",
+        "role": "Objective is to train and evaluate three (3) classification models with different algorithms (SVM, Logistic regression, & KNN) and compare the performance on the test dataset using multiple measures of performance.",
+        "description": "The digits dataset consists of 8x8 pixel images of digits. The images attribute of the dataset stores 8x8 arrays of grayscale values for each image.",
+        "image": "digits.png",
+        "category": "Data Science",
+        "techStack": "Python, Matplotlib, Scipy, Numpy, Skopt, Sklearn",
+        "colab": "https://colab.research.google.com/drive/1g8VFbUUff0ySHiAlFq-F98Tff9XTvwpg?usp=sharing",
+        "github": "https://github.com/ssk1177/Predictive-Analytics/blob/main/Evaluation_%26_Optimization.ipynb"
+    }
+]

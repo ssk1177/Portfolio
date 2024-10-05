@@ -1,0 +1,26 @@
+[
+    {
+        "title": "A Hybrid Feature Subset Selection by Combining Filters and Genetic Algorithm",
+        "authors": "Suriender Singh and S. Selvakumar",
+        "conference": "International Conference on Computing, Communication & Automation (ICCCA)",
+        "date": "May 15-16, 2015",
+        "location": "Greater Noida, India",
+        "pages": "283-289",
+        "abstract": "The presence of a large number of irrelevant features degrades the classifier accuracy, reduces the understanding of data, and increases the overall time needed for training and classification. Hence, Feature selection is a critical step in the machine learning process. The role of feature selection is to select a subset of size `d' (d<;n) from the given set of `n' features that leads to the smallest classification error. Feature selection problem can be seen as the optimization problem where the goal is to pick the optimal or near optimal feature subset with respect to an objective function. Based on the literature, it is intuitively felt that the classifier will give its optimum performance if the high dimensional data is reduced to include only relevant attributes with low redundancy. Further, it is seen that the filter method is performance centric and the genetic algorithms are insensitive to noise data. This motivated us to combine the advantages of filter method with the genetic algorithm to make a hybrid system to select the optimal feature subset from the given original feature set. The contribution of this paper includes, simultaneous optimization of feature subset and classifier parameters, a multi-objective function that reduces the classification error with reduction in cardinality of feature subset and its cost. The vital aspect of this model is to generate an initial population through various filter approaches for the initialization stage. Further, to evaluate the effectiveness of the model, experiments were conducted using KNN and decision tree (such as cart) on various UCI machine learning and generated datasets. The experiment results show that the proposed model effectively reduces the number of features without degrading the classification accuracy.",
+        "keywords": "Feature Selection, Genetic Algorithm, Data Science",
+        "link": "https://ieeexplore.ieee.org/abstract/document/7148389",
+        "citation": "Suriender Singh and S. Selvakumar. (2015). A Hybrid Feature Subset Selection by Combining Filters and Genetic Algorithm. In Proceedings of the International Conference on Computing, Communication & Automation (ICCCA), Greater Noida, India, pp. 283-289."
+    },
+    {
+        "title": "Detection of Distributed Denial of Service Attacks Using Panel of Experts",
+        "authors": "Suriender Singh and S. Selvakumar",
+        "conference": "DESIDOC: Bilingual International Conference on Information Technology: Yesterday, Today, and Tomorrow",
+        "date": "February 19-21, 2015",
+        "location": "DRDO, Delhi",
+        "pages": "248 - 254",
+        "abstract": "DDoS can be viewed as the extended version of DoS attack to deny the services to the legitimate users by a number of attackers. It is generally classified into High rate and Low rate DDoS. In low rate DDoS, attacker exploits a vulnerability in applications of the victim machine while in high rate DDoS the attacker floods the victim by creating a network of bots called botnet. Even though DDoS attack is more than a decade old, it is still considered as a major threat to the cyber security. The major difficulty of attack detection lies in its similarity with the normal situation called flash event where server experiences a heavy traffic from legitimate users. This paper focuss on the high rate DDoS attack, analyses the existing detection methods, and discusses the proposed solution. In this paper, a model consisting of a panel of experts trained on different data dimensions is proposed to classify abnormal behavior from the normal behavior. The decision of the experts is combined using the Dempster-Shafer theory to get the final classification. Experiments have been performed on various publically available and generated datasets such as Spambase, NSL-KDD Cup, ISCX, SSE-Net, etc. The proposed model is compared with the existing solutions and found to be performing with much better accuracy.",
+        "keywords": "DDoS, panel of experts, ensemble, random feature subspace, Dempster-Shafer",
+        "link": "https://www.drdo.gov.in/drdo/sites/default/files/publcations-document/artifical-intelligence.pdf",
+        "citation": "Suriender Singh and S. Selvakumar. (2015). Detection of Distributed Denial of Service Attacks Using Panel of Experts. In Proceedings of the Bilingual International Conference on Information Technology: Yesterday, Today, and Tomorrow, DRDO, Delhi, pp. 248-254."
+    }
+]

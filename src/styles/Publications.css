@@ -1,0 +1,86 @@
+.publications-container {
+  padding: 40px;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.publications-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+  padding-top: 30px;
+}
+
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+  max-width: 1200px; /* Limit the maximum width of the grid */
+  width: 100%;
+}
+
+.publication-card {
+  background-color: #ffffff; /* White background for cards */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
+  position: relative; /* Position for pseudo-element */
+}
+
+.publication-card:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.publication-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.publication-authors,
+.publication-journal,
+.publication-conference,
+.publication-date,
+.publication-keywords,
+.publication-citation {
+  margin: 8px 0;
+  color: #555;
+}
+
+.publication-abstract {
+  text-align:justify;
+  margin: 8px 0;
+  color: #555; /* Slightly lighter color for other text */
+}
+
+.publication-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #007bff; /* Bootstrap primary color */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.publication-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.highlight {
+  font-weight: bold;
+  color: black; /* Bootstrap primary color for highlighting */
+}
+
+
+@media (max-width: 768px) {
+  .publications-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}

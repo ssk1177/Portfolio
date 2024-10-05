@@ -1,15 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./../styles/Resume.css";
+import resumeContent from "./../assets/data/resumeContent.json"
+import downloadCv from "./../assets/data/Suriender_Singh_DA.pdf"
 
 const Resume = () => {
   const [resumeData, setResumeData] = useState(null);
 
   useEffect(() => {
-    // Fetch the resume content from the JSON file
-    fetch("/assets/resumeContent.json")
-      .then((response) => response.json())
-      .then((data) => setResumeData(data))
-      .catch((error) => console.error("Error fetching resume data:", error));
+    setResumeData(resumeContent);
   }, []);
 
   if (!resumeData) {
@@ -27,7 +25,7 @@ const Resume = () => {
           <a
             href={resumeData.downloadCv.link}
             className="download-cv-button"
-            download={resumeData.downloadCv.filename}
+            download={downloadCv}
             target="_blank"
             rel="noopener noreferrer"
           >
