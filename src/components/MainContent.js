@@ -1,4 +1,3 @@
-// MainContent.js
 import React from "react";
 import "./../styles/MainContent.css";
 import profilephoto from "./../assets/images/profilephoto.jpeg";
@@ -19,7 +18,7 @@ const MainContent = () => {
             src={profilephoto}
             alt="Suriender Singh"
           />
-          <h2>Suriender Singh</h2>
+          <h2 className="profile-name">Suriender Singh</h2>
           <p className="role">Data Scientist</p>
           <div className="social-links">
             <a
@@ -46,38 +45,29 @@ const MainContent = () => {
           </div>
         </div>
         <div className="bio-section">
-          <div>
-            <h3>Hello!</h3>
-            <h1 className="name-style">
-              I'm <b>Suriender</b>
-            </h1>
-            <p className="name-bio">
-              With a unique blend of expertise across data engineering, data
-              science, data analysis, and full stack development, I specialize
-              in building end-to-end data-driven solutions.
-            </p>
-          </div>
+          <h3>Hello!</h3>
+          <h1 className="name-style">
+            I'm <b>Suriender</b>
+          </h1>
+          <p className="name-bio">
+            With a unique blend of expertise across data engineering, data
+            science, data analysis, and full stack development, I specialize in
+            building end-to-end data-driven solutions.
+          </p>
           <div className="buttons">
-            <button
-              className="resume-btn"
-              onClick={() => {
-                navigate("/resume");
-              }}
-            >
+            <button className="resume-btn" onClick={() => navigate("/resume")}>
               Resume
             </button>
             <button
               className="resume-btn"
-              onClick={() => {
-                navigate("/projects");
-              }}
+              onClick={() => navigate("/projects")}
             >
               Projects
             </button>
           </div>
           <div className="tech-exp">
-            <p style={{ textAlign: "justify" }}>🔧 Technical Expertise:</p>
-            <ul style={{ textAlign: "left" }}>
+            <p>🔧 Technical Expertise:</p>
+            <ul>
               <li>
                 Data Engineering
                 <ul>
@@ -104,7 +94,7 @@ const MainContent = () => {
                 </ul>
               </li>
             </ul>
-            <p style={{ textAlign: "justify" }}>
+            <p>
               I am passionate about leveraging my skills to bridge the gap
               between data, technology, and business strategy, delivering
               solutions that scale and drive measurable impact.

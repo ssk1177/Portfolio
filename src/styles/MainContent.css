@@ -1,11 +1,9 @@
-/* MainContent.css */
 .main-content {
-    flex-grow:1;
+    flex-grow: 1;
     display: flex;
     padding: 50px;
-    /* height: 100vh; */
     justify-content: center;
-    background: linear-gradient(to right, rgb(230, 218, 206) 30%, white 30%);
+    background: linear-gradient(to right, #e6d6ce 30%, #ffffff 30%); /* Gradient background */
 }
 
 .center-section {
@@ -15,182 +13,98 @@
     align-items: flex-start;
 }
 
-.name-style {
-    font-size: 40px;
-    text-align: left;
-    color:darkmagenta;
-}
-
-.name-bio {
-    text-align: justify;
-}
-
 .profile-card {
     width: 30%;
-    background-color: rgba(244, 236, 230, 1);
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
 .profile-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-top: 10px;
+    width: 150px; /* Adjust for size */
+    height: 150px; /* Ensure circular image */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 20px; /* Space below image */
 }
 
-.social-icon {
-    width: 70px;
-    height: 25px;
-    margin: 0 10px;
-    transition: transform 0.3s;
+.profile-name {
+    font-size: 24px; /* Name size */
+    margin: 10px 0; /* Space above and below name */
+}
+
+.role {
+    font-size: 18px; /* Role size */
+    color: grey; /* Adjust for visibility */
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
+    gap: 15px; /* Space between icons */
 }
 
-.social-links a {
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.social-links a:hover .social-icon {
-    transform: scale(1.1);
+.social-icon {
+    width: 30px; /* Adjust size */
+    height: 30px; /* Consistency */
 }
 
 .bio-section {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    padding-left: 20px;
-    justify-content: space-between;
+    width: 65%; /* Adjust width for bio */
+    padding-left: 30px; /* Space from profile card */
 }
 
-.bio-section h1 {
-    font-size: 48px;
-    margin: 0;
+.name-style {
+    font-size: 40px; /* Header size */
+    color: darkmagenta; /* Adjust to match image */
 }
 
-.tech-exp {
-    line-height: 1.6;
-}
-
-.bio-section p {
-    margin-top: 10px;
-    line-height: 1.6;
-    color: #555;
+.name-bio {
+    text-align: justify; /* Align text */
+    color: #555; /* Subtle grey */
 }
 
 .buttons {
-    align-self:center;
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px; /* Margin above buttons */
 }
 
 .resume-btn {
-    padding: 10px 20px;
-    border: none;
-    margin-right: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-    width: 200px;
-    height: 40px;
-    font-size: 17px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.resume-btn {
-    background-color:crimson;
-    color: white;
-}
-
-.projects-btn {
-    background-color: white;
-    color: black;
-    border: 1px solid #007bff;
+    background-color: blue; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 5px; /* Round button */
+    transition: background-color 0.3s ease; /* Smooth color change */
 }
 
 .resume-btn:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+    background-color: darkblue; /* Darker blue on hover */
 }
 
-.projects-btn:hover {
-    background-color: #e9ecef;
-    transform: translateY(-2px);
+.tech-exp {
+    margin-top: 20px; /* Space above technical expertise */
 }
 
-/* Media Queries for Responsiveness */
-
-/* For tablets (screen width up to 768px) */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        padding: 30px;
-        height: auto;
-    }
-
     .center-section {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center items */
+        width: 100%; /* Full width */
     }
 
     .profile-card {
-        width: 60%;
-        margin-bottom: 20px;
+        width: 100%; /* Full width for mobile */
     }
 
     .bio-section {
-        width: 90%;
-        padding-left: 0;
-    }
-
-    .bio-section h1 {
-        font-size: 36px;
-    }
-
-    .resume-btn, .projects-btn {
-        width: 150px;
-        font-size: 14px;
-    }
-}
-
-/* For smartphones (screen width up to 480px) */
-@media (max-width: 480px) {
-    .main-content {
-        padding: 20px;
-    }
-
-    .profile-card {
-        width: 80%;
-    }
-
-    .profile-image {
-        width: 120px;
-        height: 120px;
-    }
-
-    .social-icon {
-        width: 50px;
-        height: 20px;
-    }
-
-    .bio-section h1 {
-        font-size: 28px;
-    }
-
-    .bio-section p {
-        font-size: 14px;
-    }
-
-    .resume-btn, .projects-btn {
-        width: 100%;
-        margin-bottom: 10px;
+        width: 100%; /* Full width for bio */
+        padding-left: 0; /* No padding */
     }
 }

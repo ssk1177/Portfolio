@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <div className="logo">
         <div className="bullet"></div>
-        <span className="name">Suriender Singh &nbsp;</span> / &nbsp; DATA
+        <span className="name">Suriender Singh &nbsp;</span>/ &nbsp; DATA
         SCIENTIST
       </div>
 
@@ -33,11 +33,6 @@ const Header = () => {
               PUBLICATIONS
             </Link>
           </li>
-          {/* <li>
-            <Link to="/contactform" className="nav-link">
-              CONTACT
-            </Link>
-          </li> */}
         </ul>
       </nav>
     </header>
