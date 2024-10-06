@@ -23,7 +23,7 @@ const Resume = () => {
             <span className="bullet-point">■</span> {resumeData.title}
           </h1>
           <a
-            href={resumeData.downloadCv.link}
+            href={downloadCv}
             className="download-cv-button"
             download={downloadCv}
             target="_blank"
