@@ -4,6 +4,10 @@ html, body {
   padding: 0;
 }
 
+* {
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
 #root {
   height: 100%;
 }
@@ -16,6 +20,7 @@ html, body {
 
 main {
   flex-grow: 1;
+  margin-top: 20px; /* Space between header and main content */
 }
 
 footer {

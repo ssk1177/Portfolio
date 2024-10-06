@@ -61,6 +61,7 @@
     .header {
         flex-direction: column;
         padding: 20px; /* Padding for mobile */
+        height: auto; /* Adjust height to auto */
     }
 
     .nav-links {
