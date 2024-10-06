@@ -75,7 +75,7 @@ const MainContent = () => {
               Projects
             </button>
           </div>
-          <div>
+          <div className="tech-exp">
             <p style={{ textAlign: "justify" }}>🔧 Technical Expertise:</p>
             <ul style={{ textAlign: "left" }}>
               <li>

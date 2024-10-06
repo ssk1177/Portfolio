@@ -18,6 +18,7 @@
 .name-style {
     font-size: 40px;
     text-align: left;
+    color:darkmagenta;
 }
 
 .name-bio {
@@ -75,7 +76,10 @@
 .bio-section h1 {
     font-size: 48px;
     margin: 0;
-    color: #333;
+}
+
+.tech-exp {
+    line-height: 1.6;
 }
 
 .bio-section p {
