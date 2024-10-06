@@ -3,7 +3,7 @@
     padding: 20px 10px; /* Increased padding for better touch interaction */
     background-color: #f9f9f9;
     border-top: 2px solid #e0e0e0;
-    color: #333;
+    color: rgb(84,84,84);
     /* height: auto; Auto height to adjust based on content */
     position:relative;
 }
@@ -47,7 +47,7 @@
 .footer-copyright {
     margin-top: 10px;
     font-size: 14px;
-    color: #777;
+    color: rgb(84,84,84);
 }
 
 /* Media Query for Tablet Screens */

@@ -22,23 +22,26 @@ const Footer = () => {
         </div>
         <div className="footer-social-links">
           <a
-            href="https://github.com/yourprofile"
+            href="https://github.com/ssk1177/"
             target="_blank"
             rel="noopener noreferrer"
+            alternate="github"
           >
             <FaGithub />
           </a>
           <a
-            href="https://www.kaggle.com/yourprofile"
+            href="https://www.kaggle.com/suriender"
             target="_blank"
             rel="noopener noreferrer"
+            alternate="kaggle"
           >
             <FaKaggle />
           </a>
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/suriender-singh"
             target="_blank"
             rel="noopener noreferrer"
+            alternate="linkedIn"
           >
             <FaLinkedin />
           </a>

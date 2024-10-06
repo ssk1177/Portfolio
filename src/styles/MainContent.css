@@ -39,12 +39,14 @@
 
 .role {
     font-size: 18px; /* Role size */
-    color: grey; /* Adjust for visibility */
+    font-family: cursive;
+    color: crimson;
 }
 
 .social-links {
     display: flex;
     gap: 15px; /* Space between icons */
+    
 }
 
 .social-icon {
