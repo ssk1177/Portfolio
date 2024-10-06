@@ -7,8 +7,8 @@ const Header = () => {
     <header className="header">
       <div className="logo">
         <div className="bullet"></div>
-        <span className="name">Suriender Singh &nbsp;</span>/ &nbsp; DATA
-        SCIENTIST
+        <span className="name">Suriender Singh &nbsp;</span>/ &nbsp;
+        <span className="role-title">DATA SCIENTIST</span>
       </div>
 
       <nav className="navigation">

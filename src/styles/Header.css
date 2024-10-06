@@ -52,6 +52,10 @@
     transition: color 0.3s ease;
 }
 
+.role-title {
+    text-decoration: underline;
+}
+
 .nav-links li a:hover {
     color: blue; /* Hover color */
 }
