@@ -6,13 +6,14 @@
     },
     "experience": [
         {
-            "duration": "June 29, 2015 - Sep 24, 2020",
+            "duration": "June 29, 2015 - September 24, 2020",
             "position": "Senior Applications Engineer",
-            "company": "Oracle India Pvt. Ltd.",
+            "company": "Oracle",
             "location": "Bangalore, India",
             "projects": [
                 {
                     "title": "Adaptive Intelligent Apps for Manufacturing (AIAMFG)",
+                    "details": "Machine learning solution tailored for analyzing manufacturing domain business data, extracting valuable insights aimed at optimizing manufacturing process.",
                     "points": [
                         "<b>Identified Patterns and Trends</b>: Utilized Python machine learning algorithms (scikit-learn, pandas) to predict the quality of final manufactured products based on raw material quality and manufacturing processes. This analysis enabled manufacturing clients to make data-driven decisions, reducing faulty products by nearly 20% for one major customer.",
                         "<b>Machine Learning Implementation</b>: Led the development of a model-building module and implemented machine learning algorithms (decision tree, random forest, SVM) using Oracle Machine Learning for R(ORE).",
@@ -21,23 +22,22 @@
                 },
                 {
                     "title": "Oracle Validation Test Suite (VTS)",
+                    "details": "VTS stress tests system components such as processor, memory, and IO.",
                     "points": [
-                        "Implemented stress testing algorithms in C language.",
-                        "Developed cross-platform features for VTS.",
-                        "Used GDB for debugging C code.",
-                        "Optimized software solutions across various operating systems."
+                        "Developed diagnostic tests using C and assembly language to simulate manufacturing and functional faults in processors and memory systems."
                     ]
                 }
             ]
         },
         {
-            "duration": "Nov 25, 2020 - Aug 11, 2023",
+            "duration": "November 25, 2020 - August 11, 2023",
             "position": "Senior Member of Technical Staff",
             "company": "Agnity Communications (Acquired by TNS)",
             "location": "Noida, India",
             "projects": [
                 {
                     "title": "Defend",
+                    "details": "Network-based application that provides spam blocker, Identity filter, and Robocalls tracker/blocker features.",
                     "points": [
                         "Led Team Management and Development: Directed and mentored a team of four developers in an Agile environment using Scrum and Kanban, ensuring timely delivery of high-quality software solutions aligned with organizational goals.",
                         "Developed Full-Stack Applications: Built end-to-end applications integrating frontend technologies (React, HTML, CSS, JavaScript) and backend solutions (SQL, Oracle Database, Java Spring Boot, PL/SQL), showcasing strong problem-solving abilities. Used Docker-compose to containerise multiple components of the application.",
@@ -47,11 +47,13 @@
                 },
                 {
                     "title": "ATF (Advanced Toll-Free)",
+                    "details": "Core network service that lets callers make free phone calls to service subscribers by dialling special service numbers, such as 8xx numbers in USA.",
                     "points": [
-                        "Managed a team of four developers on agile practices.",
-                        "Orchestrated task schedules and held daily stand-ups.",
-                        "Captured customer requirements and documented them comprehensively.",
-                        "Conducted code reviews for quality assurance."
+                        "Managed and mentored team of four developers on agile best practices, ensuring task scheduling and performance expectations were met.",
+                        "Orchestrated task schedules for team members and established clear performance expectations.",
+                        "Facilitated daily stand-up meetings for teams of four, focusing on priorities, requirements, and project progress.",
+                        "Captured customer requirements and authored comprehensive product documentation.",
+                        "Conducted thorough code reviews and performance assessments for team members to ensure high-quality deliverables."
                     ]
                 }
             ]

@@ -33,11 +33,11 @@ const Header = () => {
               PUBLICATIONS
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/contactform" className="nav-link">
               CONTACT
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

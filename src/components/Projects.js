@@ -85,7 +85,13 @@ const Projects = () => {
               <div className="project-details">
                 <div className="vertical-bar"></div>
                 <div className="project-content">
-                  <h2 className="project-name">{project.name}</h2>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h2 className="project-name">{project.name}</h2>
+                  </a>
                   <h3 className="project-role">{project.role}</h3>
                 </div>
               </div>

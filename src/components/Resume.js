@@ -46,6 +46,7 @@ const Resume = () => {
                 location={job.location}
                 description={job.projects.map((project) => ({
                   project: project.title,
+                  proj_details: project.details,
                   points: project.points,
                 }))}
               />
@@ -90,9 +91,7 @@ const Tile = ({
   <div className="tile">
     <div className="tile-header">
       <div className="tile-work">
-        <h3 className="tile-company">
-          {company}
-        </h3>
+        <h3 className="tile-company">{company}</h3>
         <h3 className="tile-duration">{duration}</h3>
       </div>
       <div className="tile-pos-loc">
@@ -127,7 +126,8 @@ const Tile = ({
       {Array.isArray(description) ? (
         description.map((desc, index) => (
           <div key={index}>
-            {desc.project ? <h4>Project: {desc.project}</h4> : null}
+            {desc.project ? <h4 className="proj-title">Project: {desc.project}</h4> : null}
+            {desc.proj_details ? <h4 className="proj-desc">{desc.proj_details}</h4> : null}
             <ul>
               {Array.isArray(desc.points) ? (
                 desc.points.map((point, idx) => (

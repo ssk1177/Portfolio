@@ -15,7 +15,6 @@ html, body {
 }
 
 main {
-  /* flex: 1; */
   flex-grow: 1;
 }
 
@@ -24,6 +23,41 @@ footer {
   padding: 1rem;
   color: white;
   text-align: center;
-  position: relative;
-  margin-top: auto; 
+  margin-top: auto;
+}
+
+/* Redesigned contact button */
+.contact-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none; /* Keeps Link styling clean */
+  z-index: 1000;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.contact-button:focus {
+  outline: none;
+}
+
+/* Add icon styles */
+.contact-button-icon {
+  font-size: 18px;
 }

@@ -67,7 +67,7 @@ const MainContent = () => {
               Resume
             </button>
             <button
-              className="projects-btn"
+              className="resume-btn"
               onClick={() => {
                 navigate("/projects");
               }}

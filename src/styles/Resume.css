@@ -30,6 +30,12 @@
   float:right;
 }
 
+.proj-desc {
+  color: black;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
 .tile-container {
   display: flex;
   flex-direction: column;
@@ -70,8 +76,7 @@
   padding-top: 10px;
 }
 
-.tile-description h4 {
-  margin-bottom: 5px;
+.proj-title {
   font-size: 16px;
   color: #4caf50;
 }
