@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./../styles/Projects.css";
-import githubIcon from "./../assets/images/github.png";
-import colabIcon from "./../assets/images/collab.jpg";
-import kaggleIcon from "./../assets/images/kaggle.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDatabase,
+  faCode,
+  faLayerGroup,
+} from "@fortawesome/free-solid-svg-icons";
 import projectsContent from "./../assets/data/projects.json";
 
 // Import images
+import githubIcon from "./../assets/images/github.png";
+import colabIcon from "./../assets/images/collab.jpg";
+import kaggleIcon from "./../assets/images/kaggle.png";
 import jobwizard from "./../assets/images/jobwizard.png";
 import workshala from "./../assets/images/workshala.png";
 import breastCancer from "./../assets/images/Breast_Cancer.png";
@@ -26,6 +32,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [filter, setFilter] = useState("All");
 
+  
   // Fetch the project data from the JSON file
   useEffect(() => {
     setProjects(projectsContent);
@@ -61,19 +68,19 @@ const Projects = () => {
           className={getButtonClass("All")}
           onClick={() => setFilter("All")}
         >
-          All
+          <FontAwesomeIcon icon={faLayerGroup} /> All
         </button>
         <button
           className={getButtonClass("Data Science")}
           onClick={() => setFilter("Data Science")}
         >
-          Data Science
+          <FontAwesomeIcon icon={faDatabase} /> Data Science
         </button>
         <button
           className={getButtonClass("Full Stack Development")}
           onClick={() => setFilter("Full Stack Development")}
         >
-          Full Stack Development
+          <FontAwesomeIcon icon={faCode} /> Full Stack Development
         </button>
       </div>
 
@@ -97,7 +104,6 @@ const Projects = () => {
               </div>
               <p className="project-description">{project.description}</p>
             </div>
-
             <div className="project-image">
               <img src={imageMap[project.image]} alt={project.name} />
             </div>

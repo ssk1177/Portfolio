@@ -113,42 +113,10 @@
   text-align:left;
 }
 
-/* Filter buttons */
-.filter-buttons {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.filter-buttons button {
-  margin: 0 10px;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-
-.filter-buttons button.active {
-  background: #ff6f61;
-  font-weight: 700;
-  transform: translateY(-2px);
-}
-
 .icon-text {
   color: crimson;
   font-weight: bold;
   text-decoration:underline;
-}
-
-.filter-buttons button:hover {
-  background: linear-gradient(135deg, #4e0f87, #1a4cbb);
-  transform: translateY(-2px);
 }
 
 .vertical-bar {
@@ -183,6 +151,42 @@
   font-size: 14px;
   color: #333;
 }
+
+.filter-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-buttons button {
+  margin: 0 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-buttons button.active {
+  background: #ff6f61;
+  font-weight: 700;
+  transform: translateY(-2px);
+}
+
+.filter-buttons button:hover {
+  background: linear-gradient(135deg, #4e0f87, #1a4cbb);
+  transform: translateY(-2px);
+}
+
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
