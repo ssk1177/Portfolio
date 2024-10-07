@@ -49,6 +49,10 @@
     
 }
 
+.icon {
+      margin-right: 8px; /* Space between icon and text */
+    }
+
 .social-icon {
     width: 30px; /* Adjust size */
     height: 30px; /* Consistency */
@@ -56,7 +60,6 @@
 
 .bio-section {
     width: 65%; /* Adjust width for bio */
-    padding-left: 30px; /* Space from profile card */
 }
 
 .name-style {
@@ -68,6 +71,20 @@
     text-align: justify; /* Align text */
     color: #555; /* Subtle grey */
 }
+
+.button {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 25px; /* Rounded corners */
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff; /* Text color */
+      text-decoration: none; /* Remove underline */
+      transition: background-color 0.3s ease; /* Smooth background transition */
+      border:none;
+      cursor: pointer;
+    }
 
 .buttons {
     display: flex;
@@ -93,6 +110,14 @@
     margin-top: 20px; /* Space above technical expertise */
     line-height: 1.6em;
 }
+
+.resume {
+      background: linear-gradient(135deg, #4CAF50, #388E3C); /* Green gradient */
+    }
+
+    .projects {
+      background: linear-gradient(135deg, #2196F3, #1976D2); /* Blue gradient */
+    }
 
 /* Responsive Styles */
 @media (max-width: 768px) {

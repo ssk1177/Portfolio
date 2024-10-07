@@ -55,13 +55,19 @@ const MainContent = () => {
             building end-to-end data-driven solutions.
           </p>
           <div className="buttons">
-            <button className="resume-btn" onClick={() => navigate("/resume")}>
+            <button
+              className="button resume"
+              onClick={() => navigate("/resume")} // Navigate to /resume
+            >
+              <span className="icon">📄</span>
               Resume
             </button>
+
             <button
-              className="resume-btn"
-              onClick={() => navigate("/projects")}
+              className="button projects"
+              onClick={() => navigate("/projects")} // Navigate to /projects
             >
+              <span className="icon">📁</span>
               Projects
             </button>
           </div>
@@ -74,7 +80,7 @@ const MainContent = () => {
                   <li>
                     Building ETL pipelines (Azure Synapse Analytics, AWS Glue)
                   </li>
-                  <li>Data warehousing (SQL, NoSQL)</li>
+                  <li>Data warehousing (Amazon Redshift)</li>
                 </ul>
               </li>
               <li>

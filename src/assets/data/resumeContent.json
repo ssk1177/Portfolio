@@ -6,30 +6,6 @@
     },
     "experience": [
         {
-            "duration": "Jun 2015 - Sep 2020",
-            "position": "Senior Applications Engineer",
-            "company": "Oracle",
-            "location": "Bangalore, India",
-            "projects": [
-                {
-                    "title": "Adaptive Intelligent Apps for Manufacturing (AIAMFG)",
-                    "details": "Machine learning solution tailored for analyzing manufacturing domain business data, extracting valuable insights aimed at optimizing manufacturing process.",
-                    "points": [
-                        "<b>Identified Patterns and Trends</b>: Utilized Python machine learning algorithms (scikit-learn, pandas) to predict the quality of final manufactured products based on raw material quality and manufacturing processes. This analysis enabled manufacturing clients to make data-driven decisions, reducing faulty products by nearly 20% for one major customer.",
-                        "<b>Machine Learning Implementation</b>: Led the development of a model-building module and implemented machine learning algorithms (decision tree, random forest, SVM) using Oracle Machine Learning for R(ORE).",
-                        "<b>Automation and Efficiency</b>: Developed Selenium automation for web application testing, reducing over 40 employee hours per 3-4 month release cycle, accelerating product delivery, and achieving cost efficiencies."
-                    ]
-                },
-                {
-                    "title": "Oracle Validation Test Suite (VTS)",
-                    "details": "VTS stress tests system components such as processor, memory, and IO.",
-                    "points": [
-                        "Developed diagnostic tests using C and assembly language to simulate manufacturing and functional faults in processors and memory systems."
-                    ]
-                }
-            ]
-        },
-        {
             "duration": "Nov 2020 - Aug 2023",
             "position": "Senior Member of Technical Staff",
             "company": "Agnity Communications (Acquired by TNS)",
@@ -54,6 +30,30 @@
                         "Facilitated daily stand-up meetings for teams of four, focusing on priorities, requirements, and project progress.",
                         "Captured customer requirements and authored comprehensive product documentation.",
                         "Conducted thorough code reviews and performance assessments for team members to ensure high-quality deliverables."
+                    ]
+                }
+            ]
+        },
+        {
+            "duration": "Jun 2015 - Sep 2020",
+            "position": "Senior Applications Engineer",
+            "company": "Oracle",
+            "location": "Bangalore, India",
+            "projects": [
+                {
+                    "title": "Adaptive Intelligent Apps for Manufacturing (AIAMFG)",
+                    "details": "Machine learning solution tailored for analyzing manufacturing domain business data, extracting valuable insights aimed at optimizing manufacturing process.",
+                    "points": [
+                        "<b>Identified Patterns and Trends</b>: Utilized Python machine learning algorithms (scikit-learn, pandas) to predict the quality of final manufactured products based on raw material quality and manufacturing processes. This analysis enabled manufacturing clients to make data-driven decisions, reducing faulty products by nearly 20% for one major customer.",
+                        "<b>Machine Learning Implementation</b>: Led the development of a model-building module and implemented machine learning algorithms (decision tree, random forest, SVM) using Oracle Machine Learning for R(ORE).",
+                        "<b>Automation and Efficiency</b>: Developed Selenium automation for web application testing, reducing over 40 employee hours per 3-4 month release cycle, accelerating product delivery, and achieving cost efficiencies."
+                    ]
+                },
+                {
+                    "title": "Oracle Validation Test Suite (VTS)",
+                    "details": "VTS stress tests system components such as processor, memory, and IO.",
+                    "points": [
+                        "Developed diagnostic tests using C and assembly language to simulate manufacturing and functional faults in processors and memory systems."
                     ]
                 }
             ]

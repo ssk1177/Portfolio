@@ -32,31 +32,35 @@ footer {
 }
 
 /* Redesigned contact button */
-.contact-button {
-  position: fixed;
+    .contact-button {
+      position: fixed;
   bottom: 20px;
   right: 20px;
   padding: 15px 20px;
-  background-color: #007BFF;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none; /* Keeps Link styling clean */
-  z-index: 1000;
-}
+      font-size: 16px;
+      color: #3c2f2f;
+      background: linear-gradient(145deg, #f7d6d6, #f3b9b9); /* Soft pink gradient */
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: inset 4px 4px 6px rgba(255, 255, 255, 0.3), /* Inner shadow for depth */
+                  6px 6px 12px rgba(0, 0, 0, 0.1), /* Outset shadow */
+                 -6px -6px 12px rgba(255, 255, 255, 0.7); /* Highlight shadow */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      z-index: 1000;
+    }
 
 .contact-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px);
-}
+      transform: translateY(-5px);
+      box-shadow: inset 4px 4px 6px rgba(255, 255, 255, 0.3),
+                  8px 8px 15px rgba(0, 0, 0, 0.15),
+                 -8px -8px 15px rgba(255, 255, 255, 0.8); /* Enhanced shadow on hover */
+    }
 
 .contact-button:focus {
   outline: none;

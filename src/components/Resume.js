@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./../styles/Resume.css";
 import resumeContent from "./../assets/data/resumeContent.json"
 import downloadCv from "./../assets/data/Suriender_Singh_DA.pdf"
