@@ -29,6 +29,7 @@ const Resume = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <span className="icon">📄</span>
             DOWNLOAD CV
           </a>
         </header>
