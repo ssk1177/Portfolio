@@ -1,9 +1,9 @@
 import React from "react";
 import "./../styles/MainContent.css";
-import profilephoto from "./../assets/images/profilephoto.jpeg";
-import linkedInIcon from "./../assets/images/linkedIn.png";
-import githubIcon from "./../assets/images/github.png";
-import kaggleIcon from "./../assets/images/kaggle.png";
+import profilephoto from "./../assets/images/profilephoto.webp";
+import linkedInIcon from "./../assets/images/linkedIn.webp";
+import githubIcon from "./../assets/images/github.webp";
+import kaggleIcon from "./../assets/images/kaggle.webp";
 import { useNavigate } from "react-router-dom";
 
 const MainContent = () => {

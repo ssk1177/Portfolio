@@ -9,23 +9,23 @@ import {
 import projectsContent from "./../assets/data/projects.json";
 
 // Import images
-import githubIcon from "./../assets/images/github.png";
-import colabIcon from "./../assets/images/collab.jpg";
-import kaggleIcon from "./../assets/images/kaggle.png";
-import jobwizard from "./../assets/images/jobwizard.png";
-import workshala from "./../assets/images/workshala.png";
-import breastCancer from "./../assets/images/Breast_Cancer.png";
-import titanic from "./../assets/images/titanic.png";
-import digits from "./../assets/images/digits.png";
-import etl from "./../assets/images/etl.png";
+import githubIcon from "./../assets/images/github.webp";
+import colabIcon from "./../assets/images/collab.webp";
+import kaggleIcon from "./../assets/images/kaggle.webp";
+import jobwizard from "./../assets/images/jobwizard.webp";
+import workshala from "./../assets/images/workshala.webp";
+import breastCancer from "./../assets/images/Breast_Cancer.webp";
+import titanic from "./../assets/images/titanic.webp";
+import digits from "./../assets/images/digits.webp";
+import etl from "./../assets/images/etl.webp";
 
 const imageMap = {
-  "jobwizard.png": jobwizard,
-  "workshala.png": workshala,
-  "Breast_Cancer.png": breastCancer,
-  "titanic.png": titanic,
-  "digits.png": digits,
-  "etl.png": etl,
+  "jobwizard.webp": jobwizard,
+  "workshala.webp": workshala,
+  "Breast_Cancer.webp": breastCancer,
+  "titanic.webp": titanic,
+  "digits.webp": digits,
+  "etl.webp": etl,
 };
 
 const Projects = () => {
