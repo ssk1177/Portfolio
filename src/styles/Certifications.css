@@ -1,0 +1,97 @@
+.certifications-container {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certifications-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.certifications-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+  padding-top: 30px;
+}
+
+.certifications-description {
+  font-size: 18px;
+  color: #6b6b6b;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.certifications-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.certification-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+
+.certification-info {
+  margin-bottom: 10px;
+}
+
+.certification-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.certification-organization {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6b6b6b;
+}
+
+.certification-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.certification-description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.view-certificate-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.view-certificate-link:hover {
+  background: linear-gradient(135deg, #4e0f87, #1a4cbb);
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Certified Kubernetes Administrator",
+        "organization": "The Linux Foundation",
+        "date": "June 2024",
+        "description": "Credential for professionals to demonstrate their Kubernetes expertise.",
+        "certificateLink": "https://example.com/certificate/kubernetes"
+    },
+    {
+        "name": "AWS Certified Solutions Architect",
+        "organization": "Amazon Web Services",
+        "date": "May 2023",
+        "description": "Demonstrates knowledge in designing and deploying scalable AWS systems.",
+        "certificateLink": "https://example.com/certificate/aws"
+    }
+]

@@ -46,22 +46,6 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      {/* Header Section */}
-      <div className="projects-header">
-        <h1 className="projects-title">
-          <span className="bullet-point">■</span> Projects
-        </h1>
-        <p className="projects-description">
-          This section showcases the projects I have built independently,
-          reflecting my skills and passion for software development. Each
-          project highlights different aspects of my expertise, from web
-          applications to data analysis. I encourage you to explore the code and
-          documentation available on my GitHub, where you can find detailed
-          insights into my development process, technologies used, and the
-          challenges I overcame.
-        </p>
-      </div>
-
       {/* Filter Buttons */}
       <div className="filter-buttons">
         <button
@@ -87,6 +71,31 @@ const Projects = () => {
       {/* Project Section */}
       {filteredProjects.map((project, index) => (
         <div className="project" key={index}>
+          <div className="social-icons">
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="social-icon" src={githubIcon} alt="GitHub" />
+              </a>
+            )}
+            {project.colab && (
+              <a href={project.colab} target="_blank" rel="noopener noreferrer">
+                <img className="social-icon" src={colabIcon} alt="Colab" />
+              </a>
+            )}
+            {project.kaggle && (
+              <a
+                href={project.kaggle}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="social-icon" src={kaggleIcon} alt="Kaggle" />
+              </a>
+            )}
+          </div>
           <div className="project-section">
             <div className="project-info">
               <div className="project-details">
@@ -112,32 +121,6 @@ const Projects = () => {
             <p>
               <b>Tech Stack:</b> {project.techStack}
             </p>
-          </div>
-          <div className="social-icons">
-            <p className="icon-text">Available on:</p>
-            {project.github && (
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className="social-icon" src={githubIcon} alt="GitHub" />
-              </a>
-            )}
-            {project.colab && (
-              <a href={project.colab} target="_blank" rel="noopener noreferrer">
-                <img className="social-icon" src={colabIcon} alt="Colab" />
-              </a>
-            )}
-            {project.kaggle && (
-              <a
-                href={project.kaggle}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img className="social-icon" src={kaggleIcon} alt="Kaggle" />
-              </a>
-            )}
           </div>
         </div>
       ))}

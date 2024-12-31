@@ -43,21 +43,28 @@
     position: relative;
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #333; /* Link color */
-    font-family: 'Fangsong', serif; /* Custom font */
-    font-size: 16px; /* Adjust font size */
-    padding: 5px; /* Space around links */
-    transition: color 0.3s ease;
-}
-
 .role-title {
     text-decoration: underline;
 }
 
+.nav-links li a {
+    text-decoration: none;
+    color: #333; /* Default link color */
+    font-family: 'Fangsong', serif; /* Custom font */
+    font-size: 16px; /* Adjust font size */
+    padding: 5px; /* Space around links */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
 .nav-links li a:hover {
     color: blue; /* Hover color */
+}
+
+.nav-links li a.active {
+    color: white; /* Highlight text color */
+    background-color: blue; /* Highlight background */
+    border-radius: 5px; /* Rounded background for active state */
+    padding: 5px 10px; /* Padding for better visibility */
 }
 
 /* Responsive styles */

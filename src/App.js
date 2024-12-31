@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import Projects from "./components/Projects";
 import Publications from "./components/Publications";
+import Certifications from "./components/Certifications"
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Resume from "./components/Resume";
 import "./App.css";
@@ -23,6 +24,7 @@ function App() {
             <Route path="/about" element={<MainContent />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/certifications" element={<Certifications />} />
             <Route path="/publications" element={<Publications />} />
             <Route path="/contactform" element={<ContactForm />} />
           </Routes>
