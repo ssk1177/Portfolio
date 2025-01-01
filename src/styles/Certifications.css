@@ -1,11 +1,9 @@
 .certifications-container {
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   font-family: 'Roboto', sans-serif;
-  text-align: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .certifications-header {
@@ -34,7 +32,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
 }
 
 .certification-card {

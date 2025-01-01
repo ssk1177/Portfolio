@@ -1,16 +1,9 @@
 [
     {
-        "name": "Certified Kubernetes Administrator",
-        "organization": "The Linux Foundation",
-        "date": "June 2024",
-        "description": "Credential for professionals to demonstrate their Kubernetes expertise.",
-        "certificateLink": "https://example.com/certificate/kubernetes"
-    },
-    {
-        "name": "AWS Certified Solutions Architect",
+        "name": "AWS Certified Cloud Practitioner",
         "organization": "Amazon Web Services",
-        "date": "May 2023",
-        "description": "Demonstrates knowledge in designing and deploying scalable AWS systems.",
-        "certificateLink": "https://example.com/certificate/aws"
+        "date": "December 17, 2024",
+        "description": "Demonstrates cloud fluency and foundational AWS knowledge",
+        "certificateLink": "https://www.credly.com/badges/869b03ba-4718-44c8-b3e5-7668e6eed80f"
     }
 ]

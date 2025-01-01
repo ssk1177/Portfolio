@@ -119,6 +119,10 @@
       background: linear-gradient(135deg, #2196F3, #1976D2); /* Blue gradient */
     }
 
+.certifications {
+      background: linear-gradient(135deg, #111113, #1916D2);
+    }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .center-section {

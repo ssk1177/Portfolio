@@ -70,6 +70,14 @@ const MainContent = () => {
               <span className="icon">📁</span>
               Projects
             </button>
+
+            <button
+              className="button certifications"
+              onClick={() => navigate("/certifications")} // Navigate to /certifications
+            >
+              <span className="icon">📁</span>
+              Certifications
+            </button>
           </div>
           <div className="tech-exp">
             <p>🔧 Technical Expertise:</p>
