@@ -5,5 +5,12 @@
         "date": "December 17, 2024",
         "description": "Demonstrates cloud fluency and foundational AWS knowledge",
         "certificateLink": "https://www.credly.com/badges/869b03ba-4718-44c8-b3e5-7668e6eed80f"
+    },
+    {
+        "name": "AWS Certified AI Practitioner",
+        "organization": "Amazon Web Services",
+        "date": "June 03, 2025",
+        "description": "Demonstrates in-demand knowledge of artificial intelligence (AI), machine learning (ML), and generative AI concepts and use cases",
+        "certificateLink": "https://www.credly.com/earner/earned/badge/6a2e62a4-7316-4bdb-9784-fe1276630b76"
     }
 ]
