@@ -29,6 +29,7 @@ const Certifications = () => {
                 {certification.description}
               </p>
             </div>
+            <div>
             {certification.certificateLink && (
               <a
                 href={certification.certificateLink}
@@ -39,6 +40,7 @@ const Certifications = () => {
                 View Certificate
               </a>
             )}
+            </div>
           </div>
         ))}
       </div>

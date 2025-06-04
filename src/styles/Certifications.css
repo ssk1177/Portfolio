@@ -4,6 +4,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .certifications-header {
@@ -39,9 +40,12 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
-  width: 300px;
+  width: 450px;
   text-align: left;
   transition: all 0.3s ease;
+  display: flex;                 /* added */
+  flex-direction: column;       /* added */
+  justify-content: space-between; /* optional, improves spacing */
 }
 
 .certification-card:hover {
@@ -51,6 +55,7 @@
 
 .certification-info {
   margin-bottom: 10px;
+  flex-grow: 1;                 /* added */
 }
 
 .certification-name {
@@ -77,7 +82,7 @@
 }
 
 .view-certificate-link {
-  display: inline-block;
+  display: flex;
   margin-top: 10px;
   padding: 10px 20px;
   background: linear-gradient(135deg, #6a11cb, #2575fc);
@@ -87,6 +92,7 @@
   font-size: 14px;
   font-weight: bold;
   transition: background 0.3s ease;
+  justify-content: center;
 }
 
 .view-certificate-link:hover {
